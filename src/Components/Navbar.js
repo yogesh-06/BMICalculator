@@ -2,7 +2,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <>
-      <nav className=" navbar navbar-expand-lg navbar-light">
+      <nav className=" navbar navbar-expand-lg navbar-dark">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             BMI Calculator

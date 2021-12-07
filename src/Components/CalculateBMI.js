@@ -10,10 +10,10 @@ const calculateBMI = ({
 }) => {
   return (
     <>
-      <div className="container">
+      <div className="container text-light">
         <div className="row mb-2">
           <div className="form-group col-7 pe-1">
-            <label className="mt-2">Height</label>
+            <label className="mt-2">Height:</label>
             <input
               name="height"
               placeholder="Height"
@@ -26,8 +26,9 @@ const calculateBMI = ({
                 borderRight: "none",
                 borderLeft: "none",
                 boxShadow: "none",
+                // backgroundColor: "rgba(0, 0, 0, 0.2)",
               }}
-              className="form-control bg-light  py-2 col-6"
+              className="form-control bg-light py-2 col-6"
             />
           </div>
 
@@ -36,7 +37,9 @@ const calculateBMI = ({
             <select
               class="form-select form-control bg-light  py-2 col-6"
               aria-label="Default select example"
-              onChange={(e) => setHeightUnit(e.target.value)}
+              onChange={(e) => {
+                setHeightUnit(e.target.value);
+              }}
               style={{
                 borderBottom: "solid black 2px",
                 borderTop: "none",
@@ -45,7 +48,6 @@ const calculateBMI = ({
                 boxShadow: "none",
               }}
             >
-              <option value="">Select Unit</option>
               <option value="FeetAndInches">Feet and Inches</option>
               <option value="Centimetres">Centimetres</option>
             </select>
@@ -53,7 +55,7 @@ const calculateBMI = ({
         </div>
         <div className="row mt-2">
           <div className="form-group col-7 pe-1">
-            <label className="mt-2">Weight</label>
+            <label className="mt-2">Weight:</label>
             <input
               name="weight"
               placeholder="Weight"
@@ -65,6 +67,7 @@ const calculateBMI = ({
                 borderRight: "none",
                 borderLeft: "none",
                 boxShadow: "none",
+                // backgroundColor: "rgba(0, 0, 0, 0.2)",
               }}
               className="form-control bg-light  py-2 col-6"
             />
@@ -90,16 +93,15 @@ const calculateBMI = ({
         </div>
         <button
           type="button"
-          class="btn btn-sm btn-light mt-2 px-2"
-          onClick={calculateBMI}
+          class="btn btn-sm btn-light mt-2 px-3 py-2"
+          onClick={() => calculateBMI(height, weight)}
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasBottom"
           aria-controls="offcanvasBottom"
+          style={{ borderRadius: "6px" }}
         >
-          CALCULATE BMI
+          <small className="fw-bold">CALCULATE BMI</small>
         </button>
-
-        {/* <div className="mt-1 p-3 bg-white">Calculate BMI</div> */}
       </div>
     </>
   );
