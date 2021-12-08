@@ -13,7 +13,7 @@ const calculateBMI = ({
       <div className="container text-light">
         <div className="row mb-2">
           <div className="form-group col-7 pe-1">
-            <label className="mt-2">Height:</label>
+            <label className="mt-2">Height</label>
             <input
               name="height"
               placeholder="Height"
@@ -48,14 +48,14 @@ const calculateBMI = ({
                 boxShadow: "none",
               }}
             >
-              <option value="FeetAndInches">Feet and Inches</option>
               <option value="Centimetres">Centimetres</option>
+              <option value="FeetAndInches">Feet and Inches</option>
             </select>
           </div>
         </div>
         <div className="row mt-2">
           <div className="form-group col-7 pe-1">
-            <label className="mt-2">Weight:</label>
+            <label className="mt-2">Weight</label>
             <input
               name="weight"
               placeholder="Weight"

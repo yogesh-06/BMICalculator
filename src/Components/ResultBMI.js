@@ -17,7 +17,7 @@ const ResultBMI = ({ BMI, BMIstatus, className, range, setRange }) => {
                 class="px-2 rounded-3 display-5"
                 style={{ backgroundColor: "lightskyblue" }}
               >
-                {BMI?.toFixed(2)}
+                {BMI && BMI?.toFixed(2)}
               </div>
             </div>
             <div className="m-4">

@@ -16,10 +16,12 @@ const Home = () => {
   // const [alert, setAlert] = useState(false);
 
   const calculateBMI = (height, weight) => {
+    console.log(weight, height);
     // e.preventDefault();
     setBMI(null);
     console.log(height, weight);
     console.log(height, weight, heightUnit, weightUnit);
+
     let data;
     if (heightUnit === "FeetAndInches") {
       data = weight / (height / 3.2808) ** 2;
