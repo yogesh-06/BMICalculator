@@ -12,6 +12,7 @@ const Home = () => {
   const [BMI, setBMI] = useState();
   const [BMIstatus, setBMIstatus] = useState("");
   const [className, setClassName] = useState("");
+  const [range, setRange] = useState(18);
   // const [alert, setAlert] = useState(false);
 
   const calculateBMI = (height, weight) => {
@@ -27,27 +28,42 @@ const Home = () => {
       setBMI(weight / (height / 100) ** 2);
       data = weight / (height / 100) ** 2;
     }
-    console.log("Result:", BMI);
-
+    console.log("Result:", data);
+    console.log(range, "range");
     if (data < 18) {
       setBMIstatus("Underweight");
       setClassName("bg-primary");
+      setRange(data);
     } else if (data > 18 && data <= 24) {
       setBMIstatus("Healthy weight");
+      setRange(data);
       setClassName("bg-success");
     } else if (data > 24 && data <= 30) {
       setBMIstatus("Pre-obesity");
+      setRange(data);
       setClassName("bg-warning");
     } else if (data > 30) {
       setBMIstatus("Overweight");
+      setRange(data);
       setClassName("bg-danger");
     }
+    // $("input[type='range']").change(function (e) {
+    //   var value = $(e.target).val();
+    //   if (value < 18) {
+    //     $("#customRanges").css({ backgroundColor: "#AABBCC" });
+    //   }
+    // });
   };
 
   console.log("Result:", Math.round(BMI));
 
   return (
-    <>
+    <div
+      style={{
+        background: "linear-gradient(to bottom, #195eff, #8551da)",
+        backgroundAttachment: "fixed",
+      }}
+    >
       <Navbar />
       {/* <Alerts /> */}
       <CalculateBMI
@@ -60,8 +76,14 @@ const Home = () => {
         calculateBMI={calculateBMI}
       />
       <InfoModal />
-      <ResultBMI BMI={BMI} BMIstatus={BMIstatus} className={className} />
-    </>
+      <ResultBMI
+        BMI={BMI}
+        BMIstatus={BMIstatus}
+        className={className}
+        range={range}
+        setRange={setRange}
+      />
+    </div>
   );
 };
 export default Home;

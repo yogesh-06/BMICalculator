@@ -1,5 +1,5 @@
 import React from "react";
-const ResultBMI = ({ BMI, BMIstatus, className }) => {
+const ResultBMI = ({ BMI, BMIstatus, className, range, setRange }) => {
   return (
     <>
       <div
@@ -17,7 +17,7 @@ const ResultBMI = ({ BMI, BMIstatus, className }) => {
                 class="px-2 rounded-3 display-5"
                 style={{ backgroundColor: "lightskyblue" }}
               >
-                {BMI.toFixed(2)}
+                {Math.round(BMI)}
               </div>
             </div>
             <div className="m-4">
@@ -43,12 +43,24 @@ const ResultBMI = ({ BMI, BMIstatus, className }) => {
           <div class="">
             <input
               type="range"
-              class="form-range "
+              class="form-range"
               min="0"
-              max="5"
-              id="customRange2"
+              max="100"
+              value={range}
+              id="customRanges"
             />
           </div>
+          {/* <div class="">
+            <input
+              class="form-range"
+              type="range"
+              name="participants"
+              min="1"
+              max="100"
+              value={range}
+            />
+            <span class="rangeslider__tooltip" id="range-tooltip"></span>
+          </div> */}
         </div>
       </div>
     </>

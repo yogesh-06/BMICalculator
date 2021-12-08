@@ -4,7 +4,7 @@ const Navbar = () => {
     <>
       <nav className=" navbar navbar-expand-lg navbar-dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             BMI Calculator
           </a>
           <button

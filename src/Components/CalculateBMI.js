@@ -32,10 +32,10 @@ const calculateBMI = ({
             />
           </div>
 
-          <div class="form-group col-5 ps-0">
+          <div className="form-group col-5 ps-0">
             <label className="mt-2">Unit</label>
             <select
-              class="form-select form-control bg-light  py-2 col-6"
+              className="form-select form-control bg-light  py-2 col-6"
               aria-label="Default select example"
               onChange={(e) => {
                 setHeightUnit(e.target.value);
@@ -72,10 +72,10 @@ const calculateBMI = ({
               className="form-control bg-light  py-2 col-6"
             />
           </div>
-          <div class="form-group col-5 ps-0">
+          <div className="form-group col-5 ps-0">
             <label className="mt-2">Unit</label>
             <select
-              class="form-select form-control bg-light  py-2 col-6"
+              className="form-select form-control bg-light  py-2 col-6"
               aria-label="Default select example"
               onChange={(e) => setWeightUnit(e.target.value)}
               style={{
@@ -93,7 +93,7 @@ const calculateBMI = ({
         </div>
         <button
           type="button"
-          class="btn btn-sm btn-light mt-2 px-3 py-2"
+          className="btn btn-sm btn-light mt-2 px-3 py-2"
           onClick={() => calculateBMI(height, weight)}
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasBottom"
