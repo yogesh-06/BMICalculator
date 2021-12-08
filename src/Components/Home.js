@@ -34,11 +34,11 @@ const Home = () => {
       setBMIstatus("Underweight");
       setClassName("bg-primary");
       setRange(data);
-    } else if (data > 18 && data <= 24) {
+    } else if (data > 18 && data <= 25) {
       setBMIstatus("Healthy weight");
       setRange(data);
       setClassName("bg-success");
-    } else if (data > 24 && data <= 30) {
+    } else if (data > 25 && data <= 30) {
       setBMIstatus("Pre-obesity");
       setRange(data);
       setClassName("bg-warning");

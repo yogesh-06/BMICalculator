@@ -29,7 +29,7 @@ const InfoModal = () => {
                   <small>Underweight</small>
                 </div>
                 <div>
-                  <small>-18.5</small>
+                  <small>18.5</small>
                 </div>
               </div>
               <div className="d-flex justify-content-between mb-2">
