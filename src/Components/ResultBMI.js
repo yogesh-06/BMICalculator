@@ -25,7 +25,7 @@ const ResultBMI = ({ BMI, BMIstatus, className, range, setRange }) => {
                 className={`px-2 rounded-3 display-5 ${className}`}
                 // style={{ opacity: "0.5" }}
               >
-                {BMI?.toFixed(2)}
+                {BMI && BMI?.toFixed(2)}
               </div>
             </div>
             <div className="ms-3">

@@ -20,6 +20,7 @@ const Home = () => {
     console.log(height, weight, heightUnit, weightUnit);
     setBMI(null);
     let data;
+
     if (heightUnit === "FeetAndInches") {
       data = weight / (height / 3.2808) ** 2;
       setBMI(weight / (height / 3.2808) ** 2);

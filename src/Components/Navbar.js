@@ -7,7 +7,7 @@ const Navbar = () => {
           <a className="navbar-brand" href="/">
             BMI Calculator
           </a>
-          <button
+          {/* <button
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -17,7 +17,7 @@ const Navbar = () => {
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
-          </button>
+          </button> */}
         </div>
       </nav>
     </>

@@ -49,8 +49,8 @@ const calculateBMI = ({
                 boxShadow: "none",
               }}
             >
-              <option value="FeetAndInches">Feet and Inches</option>
               <option value="Centimetres">Centimetres</option>
+              <option value="FeetAndInches">Feet and Inches</option>
             </select>
           </div>
         </div>
