@@ -4,6 +4,7 @@ import ResultBMI from "./ResultBMI";
 import CalculateBMI from "./CalculateBMI";
 import InfoModal from "./InfoModal";
 // import Alerts from "./Alerts";
+
 const Home = () => {
   const [heightUnit, setHeightUnit] = useState("FeetAndInches");
   const [weightUnit, setWeightUnit] = useState();
@@ -16,10 +17,8 @@ const Home = () => {
   // const [alert, setAlert] = useState(false);
 
   const calculateBMI = (height, weight) => {
-    // e.preventDefault();
-    setBMI(null);
-    console.log(height, weight);
     console.log(height, weight, heightUnit, weightUnit);
+    setBMI(null);
     let data;
     if (heightUnit === "FeetAndInches") {
       data = weight / (height / 3.2808) ** 2;
@@ -29,41 +28,42 @@ const Home = () => {
       data = weight / (height / 100) ** 2;
     }
     console.log("Result:", data);
-    console.log(range, "range");
+    console.log("Range", range);
+
     if (data < 18) {
       setBMIstatus("Underweight");
       setClassName("bg-primary");
       setRange(data);
     } else if (data > 18 && data <= 25) {
       setBMIstatus("Healthy weight");
-      setRange(data);
       setClassName("bg-success");
+      setRange(data);
     } else if (data > 25 && data <= 30) {
       setBMIstatus("Pre-obesity");
-      setRange(data);
       setClassName("bg-warning");
+      setRange(data);
     } else if (data > 30) {
       setBMIstatus("Overweight");
-      setRange(data);
       setClassName("bg-danger");
+      setRange(data);
     }
-    // $("input[type='range']").change(function (e) {
-    //   var value = $(e.target).val();
-    //   if (value < 18) {
-    //     $("#customRanges").css({ backgroundColor: "#AABBCC" });
-    //   }
-    // });
+
+    // if (weight == "" || height == "") {
+    //   setAlert(true);
+    //   setTimeout(() => {
+    //     setAlert(false);
+    //   }, 3000);
+    // }
   };
+
+  //  ||
+  //       (heightUnit === "FeetAndInches" && height >= 10) ||
+  //       (heightUnit === "Centimetres" && height >= 200)
 
   console.log("Result:", Math.round(BMI));
 
   return (
-    <div
-      style={{
-        background: "linear-gradient(to bottom, #195eff, #8551da)",
-        backgroundAttachment: "fixed",
-      }}
-    >
+    <div>
       <Navbar />
       {/* <Alerts /> */}
       <CalculateBMI
@@ -76,6 +76,7 @@ const Home = () => {
         calculateBMI={calculateBMI}
       />
       <InfoModal />
+
       <ResultBMI
         BMI={BMI}
         BMIstatus={BMIstatus}
