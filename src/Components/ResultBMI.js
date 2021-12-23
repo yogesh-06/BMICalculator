@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const ResultBMI = ({ BMI, BMIstatus, className, range, advice }) => {
   return (
     <>
@@ -13,7 +14,7 @@ const ResultBMI = ({ BMI, BMIstatus, className, range, advice }) => {
           <p className="m-0">Your BMI score</p>
           <button
             style={{ border: "none", background: "none" }}
-            class="fa fa-info-circle"
+            className="fa fa-info-circle"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           ></button>
@@ -49,6 +50,7 @@ const ResultBMI = ({ BMI, BMIstatus, className, range, advice }) => {
             min="1"
             max="100"
             value={range * 2}
+            readOnly
           />
           {/* <small className="p-0 text-muted">
             {advice}
@@ -59,13 +61,18 @@ const ResultBMI = ({ BMI, BMIstatus, className, range, advice }) => {
           */}
           <div className="d-flex justify-content-around row">
             <small className="fw-bold text-muted col-md-8 col-sm-12">
-              {advice} Your recommended to
+              {advice}
+              <span className="text-dark">
+                Your recommended to talk to your doctor or click the button for
+                get health tips.
+              </span>
             </small>
-            <button
+            <Link
+              to="/Overweight"
               className={`col-md-3 col-sm-10 mt-2 fs-5 text-light btn btn-sm ${className}`}
             >
               Get advice..
-            </button>
+            </Link>
           </div>
         </div>
       </div>

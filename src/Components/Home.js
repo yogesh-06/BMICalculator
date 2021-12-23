@@ -129,15 +129,7 @@ const Home = () => {
         weight={weight}
         calculateBMI={calculateBMI}
       />
-
       <InfoModal />
-      {/* <ResultBMI
-        BMI={BMI}
-        BMIstatus={BMIstatus}
-        className={className}
-        range={range}
-        advice={advice}
-      /> */}
     </div>
   );
 };

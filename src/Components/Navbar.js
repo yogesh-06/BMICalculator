@@ -1,15 +1,16 @@
 import React from "react";
+// import { Link } from "react-router-dom";
 // import Logo from "../Images/Logo.png";
 const Navbar = () => {
   return (
     <>
       <nav
-        className="navbar navbar-expand-lg navbar-light fw-bold mb-3"
+        className="navbar navbar-expand-lg navbar-light sticky-top"
         style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
       >
         <div className="container-fluid">
           <a
-            className="navbar-brand fw-bold text-danger bg-light px-1  rounded-2"
+            className="navbar-brand text-danger bg-light px-1  rounded-2"
             style={{ display: "flex", alignItems: "flex-end" }}
             href="/"
           >
@@ -19,17 +20,22 @@ const Navbar = () => {
               className=""
               style={{ width: "30px" }}
             />
-            <small className="">BMI Calculator</small>
+            <small className="fw-bold">BMI Calculator</small>
           </a>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">
-                  {/* Introduction */}
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <a
+                  // to="/Introduction"
+                  className="nav-link active"
+                  aria-current="page"
+                  href="/"
+                >
+                  Introduction
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/">
+              <li className="nav-item">
+                <a className="nav-link" href="/">
                   {/* Link */}
                 </a>
               </li>
