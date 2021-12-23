@@ -1,13 +1,13 @@
 import React from "react";
-const ResultBMI = ({ BMI, BMIstatus, className, range, setRange }) => {
+const ResultBMI = ({ BMI, BMIstatus, className, range, advice }) => {
   return (
     <>
       <div
-        className="offcanvas offcanvas-bottom rounded-top pb-2"
+        className="offcanvas offcanvas-bottom"
         tabIndex="-1"
         id="offcanvasBottom"
         aria-labelledby="offcanvasBottomLabel"
-        // style={{ opacity: "0.9" }}
+        style={{ borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }}
       >
         <div className="offcanvas-header py-1 d-flex justify-content-between">
           <p className="m-0">Your BMI score</p>
@@ -18,16 +18,18 @@ const ResultBMI = ({ BMI, BMIstatus, className, range, setRange }) => {
             data-bs-target="#exampleModal"
           ></button>
         </div>
+
         <div className="offcanvas-header py-0">
           <div className="d-flex justify-content-start">
             <div>
               <div
-                className={`px-2 rounded-3 display-5 ${className}`}
+                className={`px-2 text-light rounded-3 display-5 ${className}`}
                 // style={{ opacity: "0.5" }}
               >
                 {BMI && BMI?.toFixed(2)}
               </div>
             </div>
+
             <div className="ms-3">
               <p className="m-0">Your category</p>
               <span
@@ -38,35 +40,32 @@ const ResultBMI = ({ BMI, BMIstatus, className, range, setRange }) => {
           </div>
         </div>
 
-        <div className="offcanvas-body py-0">
+        <div className="offcanvas-body py-0  mb-0">
           <input
-            className="form-range"
+            className="form-range my-2"
             type="range"
             id="range"
             name="participants"
             min="1"
-            max="40"
-            value={range}
+            max="100"
+            value={range * 2}
           />
-          <small className="p-0 text-muted" style={{ fontSize: "12px" }}>
-            Your BMI of less than 18 indicates that you are Underweight, so you
-            may need to put on some weight. Your are recommended to ask your
-            doctor or a dietitian for advice.
+          {/* <small className="p-0 text-muted">
+            {advice}
+            <a href="https://www.zerofasting.com/" className="fs-6">
+              our free courses.
+            </a>
           </small>
-          <br />
-          <small className="fw-bold text-muted">
-            Your healthy BMI range: 56-76kg
-          </small>
-          <div className="">
-            {/* <input
-              className="form-range"
-              type="range"
-              name="participants"
-              min="1"
-              max="100"
-              value={range}
-            /> */}
-            <span className="rangeslider__tooltip" id="range-tooltip"></span>
+          */}
+          <div className="d-flex justify-content-around row">
+            <small className="fw-bold text-muted col-md-8 col-sm-12">
+              {advice} Your recommended to
+            </small>
+            <button
+              className={`col-md-3 col-sm-10 mt-2 fs-5 text-light btn btn-sm ${className}`}
+            >
+              Get advice..
+            </button>
           </div>
         </div>
       </div>

@@ -14,12 +14,10 @@ const InfoModal = () => {
             <h5 className="modal-title" id="exampleModalLabel">
               Info
             </h5>
-
             <p className="small">
-              BMI is useful measurment for most people over 20 years. The result
-              is an estimate and should be considered as a rough guide only as
-              it does not take into account age, gender, ethnicity or body
-              composition.
+              BMI is useful for most people over 20 years. The result is an
+              estimate and should be considered as a rough guide only as it does
+              not take into account age, gender, ethnicity or body composition.
             </p>
 
             <div className="modal-body">
