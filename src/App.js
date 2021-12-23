@@ -11,8 +11,12 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/Overweight" element={<Overweight />}></Route>
-          <Route exact path="/Introduction" element={<Introduction />}></Route>
+          <Route exact path="/Overweight">
+            <Overweight />
+          </Route>
+          <Route exact path="/Introduction">
+            <Introduction />
+          </Route>
         </Switch>
       </Router>
     </div>

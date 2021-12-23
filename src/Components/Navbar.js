@@ -29,7 +29,7 @@ const Navbar = () => {
                   // to="/Introduction"
                   className="nav-link active"
                   aria-current="page"
-                  href="/"
+                  href="#Introduction"
                 >
                   Introduction
                 </a>

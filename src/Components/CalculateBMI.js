@@ -35,7 +35,7 @@ const calculateBMI = ({
           touched,
           isValid,
         }) => (
-          <div className="container text-light">
+          <div className="container text-light my-3">
             {console.log(errors)}
 
             <div className="row mb-2">
@@ -130,7 +130,14 @@ const calculateBMI = ({
                   }}
                 >
                   <option defaultValue="Kilograms">Kilograms</option>
-                  <option value="Pounds">Pounds</option>
+                  <option
+                    value="Pounds"
+                    data-bs-toggle="tooltip"
+                    title="Option disabled by developer"
+                    disabled
+                  >
+                    Pounds
+                  </option>
                 </select>
               </div>
             </div>
@@ -148,8 +155,16 @@ const calculateBMI = ({
           </div>
         )}
       </Formik>
-
-      <img className="main my-0" src={Main} alt="" />
+      <div
+        className="row d-flex align-items-center justify-content-center"
+        style={{ backgroundColor: "rgba(255, 255, 255, 0.8)" }}
+      >
+        <div className="col-md-5 col-sm-12 mx-3 fs-2">
+          Keep your health in check
+          <h2 className="">with online BMI Calculator</h2>
+        </div>
+        <img className="main col-md-7 col-sm-12" src={Main} alt="" />
+      </div>
     </>
   );
 };

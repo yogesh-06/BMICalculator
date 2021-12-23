@@ -4,6 +4,7 @@ import ResultBMI from "./ResultBMI";
 import CalculateBMI from "./CalculateBMI";
 import InfoModal from "./InfoModal";
 import Alerts from "./Alerts";
+import Introduction from "./Introduction";
 const Home = () => {
   const [heightUnit, setHeightUnit] = useState("FeetAndInches");
   const [weightUnit, setWeightUnit] = useState();
@@ -28,7 +29,7 @@ const Home = () => {
       setBMI(weight / (height / 100) ** 2);
       data = weight / (height / 100) ** 2;
     }
-    console.log("Result:", data);
+    console.log("Result:-", BMI);
     console.log("Range", range);
 
     if (data < 18) {
@@ -71,8 +72,6 @@ const Home = () => {
 
   // (heightUnit === "FeetAndInches" && height >= 10) ||
   // (heightUnit === "Centimetres" && height >= 200)
-
-  console.log("Result:", Math.round(BMI));
 
   return (
     <div
@@ -130,6 +129,9 @@ const Home = () => {
         calculateBMI={calculateBMI}
       />
       <InfoModal />
+      <div id="Introduction">
+        <Introduction />
+      </div>
     </div>
   );
 };

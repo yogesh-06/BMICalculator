@@ -4,8 +4,8 @@ import Navbar from "./Navbar";
 const Introduction = () => {
   return (
     <>
-      <Navbar />
-      <div className="container"></div>
+      {/* <Navbar /> */}
+      <div className="container">Hello World</div>
     </>
   );
 };
