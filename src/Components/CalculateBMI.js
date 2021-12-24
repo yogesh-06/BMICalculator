@@ -35,7 +35,7 @@ const calculateBMI = ({
           touched,
           isValid,
         }) => (
-          <div className="container text-light my-3">
+          <div className="container text-light my-2">
             {console.log(errors)}
 
             <div className="row mb-2">
@@ -156,14 +156,14 @@ const calculateBMI = ({
         )}
       </Formik>
       <div
-        className="row d-flex align-items-center justify-content-center"
-        style={{ backgroundColor: "rgba(255, 255, 255, 0.8)" }}
+        className="row align-items-center d-flex justify-content-center mx-3 rounded-3 mt-5"
+        style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
       >
-        <div className="col-md-5 col-sm-12 mx-3 fs-2">
+        <div className="col-6 fs-2 ">
           Keep your health in check
-          <h2 className="">with online BMI Calculator</h2>
+          <h3 className="">with online BMI Calculator</h3>
         </div>
-        <img className="main col-md-7 col-sm-12" src={Main} alt="" />
+        <img className="main col-6 " src={Main} alt="" />
       </div>
     </>
   );

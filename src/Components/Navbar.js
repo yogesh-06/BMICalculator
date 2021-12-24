@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import Logo from "../Images/Logo.png";
 const Navbar = () => {
   return (
@@ -9,7 +9,8 @@ const Navbar = () => {
         style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
       >
         <div className="container-fluid">
-          <a
+          <Link
+            to="/"
             className="navbar-brand text-danger bg-light px-1  rounded-2"
             style={{ display: "flex", alignItems: "flex-end" }}
             href="/"
@@ -21,19 +22,50 @@ const Navbar = () => {
               style={{ width: "30px" }}
             />
             <small className="fw-bold">BMI Calculator</small>
-          </a>
+          </Link>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a
+                {/* <a
                   // to="/Introduction"
                   className="nav-link active"
                   aria-current="page"
                   href="#Introduction"
                 >
                   Introduction
-                </a>
+                </a> */}
+                <div class="dropdown">
+                  <a
+                    class="dropdown-toggle text-dark"
+                    style={{ textDecoration: "none" }}
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Introduction
+                  </a>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li>
+                      <a class="dropdown-item" href="#WhatIsBMI">
+                        What is BMI?
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#WhatIsBMIRange">
+                        What is BMI range?
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Something else here
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </li>
+
               <li className="nav-item">
                 <a className="nav-link" href="/">
                   {/* Link */}

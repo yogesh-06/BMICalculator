@@ -8,7 +8,11 @@ const ResultBMI = ({ BMI, BMIstatus, className, range, advice }) => {
         tabIndex="-1"
         id="offcanvasBottom"
         aria-labelledby="offcanvasBottomLabel"
-        style={{ borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }}
+        style={{
+          borderTopLeftRadius: "10px",
+          borderTopRightRadius: "10px",
+          height: "260px",
+        }}
       >
         <div className="offcanvas-header py-1 d-flex justify-content-between">
           <p className="m-0">Your BMI score</p>
@@ -63,13 +67,12 @@ const ResultBMI = ({ BMI, BMIstatus, className, range, advice }) => {
             <small className="fw-bold text-muted col-md-8 col-sm-12">
               {advice}
               <span className="text-dark">
-                Your recommended to talk to your doctor or click the button for
-                get health tips.
+                Click the button for get health tips.
               </span>
             </small>
             <Link
               to="/Overweight"
-              className={`col-md-3 col-sm-10 mt-2 fs-5 text-light btn btn-sm ${className}`}
+              className={`col-md-3 col-sm-10 mt-2 fs-5 text-light btn btn-sm  align-self-end ${className}`}
             >
               Get advice..
             </Link>

@@ -5,6 +5,7 @@ import CalculateBMI from "./CalculateBMI";
 import InfoModal from "./InfoModal";
 import Alerts from "./Alerts";
 import Introduction from "./Introduction";
+// import Introduction from "./Introduction";
 const Home = () => {
   const [heightUnit, setHeightUnit] = useState("FeetAndInches");
   const [weightUnit, setWeightUnit] = useState();
@@ -74,65 +75,58 @@ const Home = () => {
   // (heightUnit === "Centimetres" && height >= 200)
 
   return (
-    <div
-      style={
-        BMI < 18
-          ? {
-              height: "100vh",
-              background: "linear-gradient(to bottom,#c468cc,#195eff )",
-              backgroundAttachment: "fixed",
-            }
-          : BMI > 18 && BMI <= 25
-          ? {
-              height: "100vh",
-              background: "linear-gradient(to bottom, #1eeb4a, #0b76e0)",
-              backgroundAttachment: "fixed",
-            }
-          : BMI > 25 && BMI <= 30
-          ? {
-              height: "100vh",
-              background: "linear-gradient(to bottom, #ffee00, #c71f0c)",
-              backgroundAttachment: "fixed",
-            }
-          : BMI > 30
-          ? {
-              height: "100vh",
-              background: "linear-gradient(to bottom, #ff0831, #ffc500)",
-              backgroundAttachment: "fixed",
-            }
-          : {
-              height: "100vh",
-              background: "linear-gradient(to bottom, #195eff, #c468cc)",
-              backgroundAttachment: "fixed",
-            }
-      }
-    >
-      <Navbar />
-      {alert ? (
-        <Alerts />
-      ) : (
-        <ResultBMI
-          BMI={BMI}
-          BMIstatus={BMIstatus}
-          className={className}
-          range={range}
-          advice={advice}
+    <>
+      <div
+        className="pb-2"
+        style={
+          BMI < 18
+            ? {
+                background: "linear-gradient(to bottom,#c468cc,#195eff )",
+              }
+            : BMI > 18 && BMI <= 25
+            ? {
+                background: "linear-gradient(to bottom, #1eeb4a, #0b76e0)",
+              }
+            : BMI > 25 && BMI <= 30
+            ? {
+                background: "linear-gradient(to bottom, #ffee00, #c71f0c)",
+              }
+            : BMI > 30
+            ? {
+                background: "linear-gradient(to bottom, #ff0831, #ffc500)",
+              }
+            : {
+                background: "linear-gradient(to bottom, #195eff, #c468cc)",
+              }
+        }
+      >
+        <Navbar />
+        {alert ? (
+          <Alerts />
+        ) : (
+          <ResultBMI
+            BMI={BMI}
+            BMIstatus={BMIstatus}
+            className={className}
+            range={range}
+            advice={advice}
+          />
+        )}
+        <CalculateBMI
+          setHeightUnit={setHeightUnit}
+          setWeightUnit={setWeightUnit}
+          setHeight={setHeight}
+          setWeight={setWeight}
+          height={height}
+          weight={weight}
+          calculateBMI={calculateBMI}
         />
-      )}
-      <CalculateBMI
-        setHeightUnit={setHeightUnit}
-        setWeightUnit={setWeightUnit}
-        setHeight={setHeight}
-        setWeight={setWeight}
-        height={height}
-        weight={weight}
-        calculateBMI={calculateBMI}
-      />
-      <InfoModal />
+        <InfoModal />
+      </div>
       <div id="Introduction">
         <Introduction />
       </div>
-    </div>
+    </>
   );
 };
 export default Home;
