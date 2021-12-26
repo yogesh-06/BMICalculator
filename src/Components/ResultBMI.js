@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const ResultBMI = ({ BMI, BMIstatus, className, range, advice }) => {
+const ResultBMI = ({ BMI, BMIstatus, className, range, advice, button }) => {
   return (
     <>
       <div
@@ -71,7 +71,7 @@ const ResultBMI = ({ BMI, BMIstatus, className, range, advice }) => {
               </span>
             </small>
             <Link
-              to="/Overweight"
+              to={button}
               className={`col-md-3 col-sm-10 mt-2 fs-5 text-light btn btn-sm  align-self-end ${className}`}
             >
               Get advice..

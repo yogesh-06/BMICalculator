@@ -35,7 +35,7 @@ const calculateBMI = ({
           touched,
           isValid,
         }) => (
-          <div className="container text-light my-2">
+          <div className="container text-light mb-2">
             {console.log(errors)}
 
             <div className="row mb-2">

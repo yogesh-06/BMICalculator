@@ -4,32 +4,29 @@ import Women from "../Images/women.svg";
 const Introduction = () => {
   return (
     <>
-      <div className="container py-4 bg-light" id="WhatIsBMI">
-        <div className="text-center px-3 fs-4">
+      <div className="container py-4" id="WhatIsBMI">
+        <div className="text-center px-3 fs-3">
           <span className="fw-bold me-2">Online BMI Calculator:</span> A
           Necessary Tool For Health
         </div>
         <div className="row align-items-start my-4">
           <div className="col-md-8 col-sm-12 intro">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-            debitis saepe voluptatum autem dolor quibusdam, consequatur
-            voluptates expedita repellat repudiandae beatae animi nobis, quaerat
-            exercitationem molestias dicta accusamus tempora. Quaerat
-            blanditiis, esse omnis odit minus ab impedit exercitationem itaque
-            consequatur? Ex sunt explicabo nihil odio obcaecati, unde,
-            temporibus dolore eius officiis nostrum quod reprehenderit
-            accusantium, nam molestias. Est, excepturi! Inventore sint nulla ut
-            ad sunt, culpa omnis perferendis vero perspiciatis placeat odit
-            accusantium minus quibusdam totam sit voluptate fuga, harum ea
-            numquam eum. Error dignissimos nesciunt ullam ipsam cum quibusdam
-            temporibus, alias commodi quo, omnis laborum similique. Id, corrupti
-            quos nam deserunt eius voluptates earum, aspernatur aut magni
-            quaerat vel consectetur. Dignissimos itaque veniam consequatur sunt,
-            dolores harum natus esse maxime distinctio temporibus voluptatum
-            adipisci ratione commodi. Inventore, magnam optio. Corrupti ducimus
-            adipisci minus error magni deleniti nostrum unde facilis laborum
-            voluptate. Veritatis dicta illo labore fugit commodi dignissimos
-            ipsum!
+            The last one year has taught us how important it is to be healthy.
+            The coronavirus pandemic was a rude shock for everyone and it
+            reminded everyone that it is extremely important to be healthy.
+            People need to follow a well-balanced diet as well as work out. To
+            follow a healthy routine, one needs to know their body type. Every
+            person has a different body type and hence they cannot be asked to
+            follow the same diet or exercise schedule. <br /> Moreover, it is
+            not enough to know just your bodyweight; one has to be aware of
+            their body mass index (BMI). The online Body Mass Index (BMI)
+            calculator is a perfect device to determine that. The BMI calculator
+            measures how much body mass you have according to your height and
+            weight. Body mass refers not only to the fat within your body but
+            also within muscles and bones. It is calculated by considering your
+            weight and dividing it by the square of your height. This is a
+            useful and easy tool for getting to know different weight categories
+            that may lead to health problems.
           </div>
           <img
             className="col-md-4 col-sm-12 intro_img py-3"
@@ -39,7 +36,7 @@ const Introduction = () => {
         </div>
       </div>
       <div style={{ backgroundColor: "#f3f3f3" }} className="py-4">
-        <div className="text-center px-3 fs-4">
+        <div className="text-center px-3 fs-3">
           <span className="fw-bold me-2">What Is The Idiol BMI Range:</span>
           For Men And Women
         </div>
@@ -48,7 +45,7 @@ const Introduction = () => {
           id="WhatIsBMIRange"
         >
           <div class="card col-md-6 col-sm-12 mb-3" style={{ width: "21rem" }}>
-            <img src={Man} class="card-img-top " alt="..." />
+            <img src={Man} class="card-img-top container" alt="..." />
             <div class="card-body">
               <h5 class="card-title text-center">BMI For Men</h5>
               <p class="card-text">
@@ -59,7 +56,7 @@ const Introduction = () => {
               </p>
             </div>
           </div>
-          <div class="card col-md-6 col-sm-12" style={{ width: "21rem" }}>
+          <div class="card col-md-6 col-sm-12 mb-3" style={{ width: "21rem" }}>
             <img src={Women} class="card-img-top container" alt="..." />
             <div class="card-body">
               <h5 class="card-title text-center">BMI For Women</h5>
@@ -74,16 +71,17 @@ const Introduction = () => {
         </div>
       </div>
       <div style={{ backgroundColor: "light" }} className="py-4">
-        <div className="text-center px-3 fs-4">
+        <div className="text-center px-3 fs-3">
           <span className="fw-bold me-2">An Overview Of:</span>
           Body Mass Index
         </div>
-        <div>
-          <div className="d-inline-flex p-1 px-2 d-flex justify-content-center bg-secondary rounded-3">
-            <div className="fs-6 px-3 py-1  me-2 bg-light rounded-3">
-              What is BMI?
-            </div>
-            <div className="fs-6 px-3 py-1  bg-light rounded-3">
+        <div className="text-center my-3">
+          <div
+            className="d-inline-flex text-muted fw-bold mute p-1 px-2 d-flex justify-content-center rounded-3"
+            style={{ backgroundColor: "lightgray" }}
+          >
+            <div className="fs-6 px-3 py-1  me-2 rounded-3">What is BMI?</div>
+            <div className="fs-6 px-3 py-1  rounded-3 mute">
               What is one calculate BMI?
             </div>
           </div>
