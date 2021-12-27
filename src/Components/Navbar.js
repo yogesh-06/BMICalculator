@@ -61,7 +61,7 @@ const Navbar = () => {
                   aria-current="page"
                   href="/"
                 >
-                  Malnutritian
+                  Malnutrition
                 </Link>
               </li>
               <li className="nav-item navHover">
