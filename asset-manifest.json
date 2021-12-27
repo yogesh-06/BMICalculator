@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/BMICalculator/static/css/main.ef2e64de.chunk.css",
-    "main.js": "/BMICalculator/static/js/main.0b70a698.chunk.js",
-    "main.js.map": "/BMICalculator/static/js/main.0b70a698.chunk.js.map",
+    "main.js": "/BMICalculator/static/js/main.e48e526c.chunk.js",
+    "main.js.map": "/BMICalculator/static/js/main.e48e526c.chunk.js.map",
     "runtime-main.js": "/BMICalculator/static/js/runtime-main.06fdfd92.js",
     "runtime-main.js.map": "/BMICalculator/static/js/runtime-main.06fdfd92.js.map",
     "static/js/2.b8a25c39.chunk.js": "/BMICalculator/static/js/2.b8a25c39.chunk.js",
@@ -17,9 +17,17 @@
     "static/media/Child-Obesity.fb23e107.jpg": "/BMICalculator/static/media/Child-Obesity.fb23e107.jpg",
     "static/media/Mainpage.af89563b.png": "/BMICalculator/static/media/Mainpage.af89563b.png",
     "static/media/Malnutrition-challenge.b6b01990.jpg": "/BMICalculator/static/media/Malnutrition-challenge.b6b01990.jpg",
+    "static/media/ObeseChild.7ee42abc.webp": "/BMICalculator/static/media/ObeseChild.7ee42abc.webp",
     "static/media/Obesity-The-biggest-threat-to-India.be97fdfd.jpg": "/BMICalculator/static/media/Obesity-The-biggest-threat-to-India.be97fdfd.jpg",
+    "static/media/ObesityChart.4cfe3fc1.webp": "/BMICalculator/static/media/ObesityChart.4cfe3fc1.webp",
+    "static/media/ObesityFigure.eddbb9bc.png": "/BMICalculator/static/media/ObesityFigure.eddbb9bc.png",
+    "static/media/ObesityIndia.3a3c0e3d.jpg": "/BMICalculator/static/media/ObesityIndia.3a3c0e3d.jpg",
+    "static/media/ObesityPrevention.95521398.jpg": "/BMICalculator/static/media/ObesityPrevention.95521398.jpg",
     "static/media/ObesityStress.a7551f24.jpg": "/BMICalculator/static/media/ObesityStress.a7551f24.jpg",
+    "static/media/Obesity_GFX_2.6405f72d.jpg": "/BMICalculator/static/media/Obesity_GFX_2.6405f72d.jpg",
     "static/media/OverweightLady.e2e9fed8.jpg": "/BMICalculator/static/media/OverweightLady.e2e9fed8.jpg",
+    "static/media/PreventionTips.9035d5ec.jpg": "/BMICalculator/static/media/PreventionTips.9035d5ec.jpg",
+    "static/media/Slider1.7cb2e3d4.jpg": "/BMICalculator/static/media/Slider1.7cb2e3d4.jpg",
     "static/media/Underweight-child.721d3e4a.jpg": "/BMICalculator/static/media/Underweight-child.721d3e4a.jpg",
     "static/media/Underweight-childres.ae181931.jpg": "/BMICalculator/static/media/Underweight-childres.ae181931.jpg",
     "static/media/man.c2a90a8e.svg": "/BMICalculator/static/media/man.c2a90a8e.svg",
@@ -30,6 +38,6 @@
     "static/js/runtime-main.06fdfd92.js",
     "static/js/2.b8a25c39.chunk.js",
     "static/css/main.ef2e64de.chunk.css",
-    "static/js/main.0b70a698.chunk.js"
+    "static/js/main.e48e526c.chunk.js"
   ]
 }
