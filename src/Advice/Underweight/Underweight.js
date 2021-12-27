@@ -72,13 +72,13 @@ const Underweight = () => {
         </div>
         <div className="container">
           <div className="fs-3 text-decoration-underline text-danger">
-            What Is Under-Weight?:
+            What Is Under-Weight?
           </div>
           <span className=" fs-5 small">
             What is a underweight person? An underweight person is a person
             whose body weight is considered too low to be healthy. The same
             concept applies to animals.
-            <span className="text-danger fw-bold"> India</span>.
+            {/* <span className="text-danger fw-bold"> India</span>. */}
           </span>
         </div>
         {/* <div className="bg-light">
