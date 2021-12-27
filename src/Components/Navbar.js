@@ -5,8 +5,8 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className="navbar navbar-expand-lg navbar-light sticky-top bg-danger"
-        // style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
+        className="navbar navbar-expand-lg navbar-light sticky-top bg-light"
+        // style={{ backgroundColor: "#255, 97, 97" }}
       >
         <div className="container-fluid">
           <Link
@@ -32,13 +32,38 @@ const Navbar = () => {
                   aria-current="page"
                   href="/"
                 >
-                  What IS BMI?
+                  Introduction
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link to="HealthRisk" className="nav-link" href="/">
-                  Health Risks
+                <Link
+                  to="/Overweight"
+                  className="nav-link active"
+                  aria-current="page"
+                  href="/"
+                >
+                  Obesity & Overweight
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/Underweight"
+                  className="nav-link active"
+                  aria-current="page"
+                  href="/"
+                >
+                  Malnutritian
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/Normalweight"
+                  className="nav-link active"
+                  aria-current="page"
+                  href="/"
+                >
+                  Fit & Healthy
                 </Link>
               </li>
             </ul>

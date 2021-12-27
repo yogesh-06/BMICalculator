@@ -1,11 +1,12 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
-import Slider1 from "../Images/Obesity-The-biggest-threat-to-India.jpg";
-import Slider2 from "../Images/OverweightLady.jpg";
-import Slider3 from "../Images/Child-Obesity.jpg";
+import Slider1 from "../../Images/Obesity-The-biggest-threat-to-India.jpg";
+import Slider2 from "../../Images/OverweightLady.jpg";
+import Slider3 from "../../Images/Child-Obesity.jpg";
+import Overview from "./Overview";
+import Reports from "./Reports";
 const Overweight = () => {
   return (
-    <>
+    <div className="scroll">
       <div
         id="carouselExampleControls"
         class="carousel slide"
@@ -70,7 +71,7 @@ const Overweight = () => {
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <div className="container">
+      {/*   <div className="container">
         <div className="fs-3 text-decoration-underline text-danger">
           About Overweight & Obesity :
         </div>
@@ -80,7 +81,7 @@ const Overweight = () => {
           <span className="text-danger fw-bold"> India</span>.
         </span>
       </div>
-      {/* <div className="bg-light">
+      <div className="bg-light">
         <div className="container">
           <div className="my-2">
             <div className="fs-3 text-decoration-underline text-danger">
@@ -110,7 +111,96 @@ const Overweight = () => {
           </div>
         </div>
       </div> */}
-    </>
+      <nav
+        className="py-1"
+        style={{ position: "sticky", top: "56px", backgroundColor: "white" }}
+      >
+        <div class="nav nav-tabs ps-2" id="nav-tab" role="tablist">
+          <button
+            class="nav-link active"
+            id="nav-home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-home"
+            type="button"
+            role="tab"
+            aria-controls="nav-home"
+            aria-selected="true"
+          >
+            Overview
+          </button>
+          <button
+            class="nav-link"
+            id="nav-profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-profile"
+            type="button"
+            role="tab"
+            aria-controls="nav-profile"
+            aria-selected="false"
+          >
+            Reports
+          </button>
+          <button
+            class="nav-link"
+            id="nav-contact-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-contact"
+            type="button"
+            role="tab"
+            aria-controls="nav-contact"
+            aria-selected="false"
+          >
+            Preventions
+          </button>
+          <button
+            class="nav-link"
+            id="nav-solution-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-solution"
+            type="button"
+            role="tab"
+            aria-controls="nav-solution"
+            aria-selected="false"
+          >
+            Solutions
+          </button>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="nav-home"
+          role="tabpanel"
+          aria-labelledby="nav-home-tab"
+        >
+          <Overview />
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-profile"
+          role="tabpanel"
+          aria-labelledby="nav-profile-tab"
+        >
+          <Reports />
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-contact"
+          role="tabpanel"
+          aria-labelledby="nav-contact-tab"
+        >
+          Preventions
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-solution"
+          role="tabpanel"
+          aria-labelledby="nav-solution-tab"
+        >
+          Solutions
+        </div>
+      </div>
+    </div>
   );
 };
 export default Overweight;

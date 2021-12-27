@@ -11,7 +11,7 @@ const ResultBMI = ({ BMI, BMIstatus, className, range, advice, button }) => {
         style={{
           borderTopLeftRadius: "10px",
           borderTopRightRadius: "10px",
-          height: "260px",
+          // height: "260px",
         }}
       >
         <div className="offcanvas-header py-1 d-flex justify-content-between">
@@ -63,7 +63,7 @@ const ResultBMI = ({ BMI, BMIstatus, className, range, advice, button }) => {
             </a>
           </small>
           */}
-          <div className="d-flex justify-content-around row">
+          <div className="d-flex justify-content-around row align-items-between">
             <small className="fw-bold text-muted col-md-8 col-sm-12">
               {advice}
               <span className="text-dark">

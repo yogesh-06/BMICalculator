@@ -1,12 +1,11 @@
 import Home from "./Components/Home";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Overweight from "./Advice/Overweight";
 import Introduction from "./Components/Introduction";
 import Navbar from "./Components/Navbar";
-import HealthRisk from "./Components/HealthRisk";
-import Normalweight from "./Advice/Normalweight";
-import Underweight from "./Advice/Underweight";
+import Normalweight from "./Advice/Normalweight/Normalweight";
+import Underweight from "./Advice/Underweight/Underweight";
+import Overweight from "./Advice/Overweight/Overweight";
 function App() {
   return (
     <div>
@@ -27,9 +26,6 @@ function App() {
           </Route>
           <Route exact path="/Introduction">
             <Introduction />
-          </Route>
-          <Route exact path="/HealthRisk">
-            <HealthRisk />
           </Route>
         </Switch>
       </Router>

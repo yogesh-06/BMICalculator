@@ -1,8 +1,8 @@
 import React from "react";
-import Slider1 from "../Images/Obesity-The-biggest-threat-to-India.jpg";
-import Slider2 from "../Images/OverweightLady.jpg";
-import Slider3 from "../Images/Child-Obesity.jpg";
-const Normalweight = () => {
+import Slider1 from "../../Images/Malnutrition-challenge.jpg";
+import Slider2 from "../../Images/Underweight-childres.jpg";
+import Slider3 from "../../Images/Underweight-child.jpg";
+const Underweight = () => {
   return (
     <>
       <>
@@ -72,11 +72,12 @@ const Normalweight = () => {
         </div>
         <div className="container">
           <div className="fs-3 text-decoration-underline text-danger">
-            About Overweight & Obesity :
+            What Is Under-Weight?:
           </div>
           <span className=" fs-5 small">
-            Obesity is a serious chronic disease, and the prevalence of obesity
-            continues to increase in the
+            What is a underweight person? An underweight person is a person
+            whose body weight is considered too low to be healthy. The same
+            concept applies to animals.
             <span className="text-danger fw-bold"> India</span>.
           </span>
         </div>
@@ -114,4 +115,4 @@ const Normalweight = () => {
     </>
   );
 };
-export default Normalweight;
+export default Underweight;

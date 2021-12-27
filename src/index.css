@@ -59,6 +59,15 @@
   width: 1em;
   margin-left: -1em;
 }
+.scroll {
+  overflow-y: "auto";
+  overflow-x: "hidden";
+  max-height: "600px";
+}
+.ObesityReasons {
+  width: 500px;
+  height: 500px;
+}
 
 @media screen and (max-width: 768px) {
   .main {
@@ -75,5 +84,14 @@
   }
   .overweight {
     order: 2;
+  }
+  .scroll {
+    overflow-y: "auto";
+    overflow-x: "hidden";
+    max-height: "100%";
+  }
+  .ObesityReasons {
+    width: 200px;
+    height: 350px;
   }
 }
