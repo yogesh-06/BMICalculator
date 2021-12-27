@@ -4,6 +4,7 @@ import Slider2 from "../../Images/OverweightLady.jpg";
 import Slider3 from "../../Images/Child-Obesity.jpg";
 import Overview from "./Overview";
 import Reports from "./Reports";
+import Preventions from "./Preventions";
 const Overweight = () => {
   return (
     <div className="scroll">
@@ -189,7 +190,7 @@ const Overweight = () => {
           role="tabpanel"
           aria-labelledby="nav-contact-tab"
         >
-          Preventions
+          <Preventions />
         </div>
         <div
           class="tab-pane fade"

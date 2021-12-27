@@ -10,7 +10,7 @@ const Navbar = () => {
       >
         <div className="container-fluid">
           <Link
-            to="/"
+            to="/BMICalculator"
             className="navbar-brand text-danger bg-light px-1  rounded-2"
             style={{ display: "flex", alignItems: "flex-end" }}
             // href="/"

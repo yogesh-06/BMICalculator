@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/BMICalculator">
             <Home />
           </Route>
           <Route exact path="/Underweight">
