@@ -47,13 +47,13 @@ const Introduction = () => {
             id="WhatIsBMIRange"
           >
             <div
-              class="card col-md-6 col-sm-12 mb-3"
+              className="card col-md-6 col-sm-12 mb-3"
               style={{ width: "21rem" }}
             >
-              <img src={Man} class="card-img-top container" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title text-center">BMI For Men</h5>
-                <p class="card-text">
+              <img src={Man} className="card-img-top container" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title text-center">BMI For Men</h5>
+                <p className="card-text">
                   An ideal BMI range which is considered normal is supposedly
                   between 18.5 to 24.9 kg/m2. BMI below18.5 (approx) is
                   considered underweight and anything between 24.9 to 30
@@ -62,13 +62,13 @@ const Introduction = () => {
               </div>
             </div>
             <div
-              class="card col-md-6 col-sm-12 mb-3"
+              className="card col-md-6 col-sm-12 mb-3"
               style={{ width: "21rem" }}
             >
-              <img src={Women} class="card-img-top container" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title text-center">BMI For Women</h5>
-                <p class="card-text">
+              <img src={Women} className="card-img-top container" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title text-center">BMI For Women</h5>
+                <p className="card-text">
                   Some studies suggest that the average BMI value for women is
                   slightly lower than men. While some studies have suggested
                   that higher BMI cut offs for women like 32, 33 are normal.
@@ -97,12 +97,12 @@ const Introduction = () => {
           </div>
           <div className="row d-flex justify-content-center my-4">
             <div
-              class="card col-md-6 col-sm-12 mb-3"
+              className="card col-md-6 col-sm-12 mb-3"
               style={{ width: "21rem" }}
             >
-              <div class="card-body">
-                <h5 class="card-title text-center">BMI For Men</h5>
-                <p class="card-text">
+              <div className="card-body">
+                <h5 className="card-title text-center">BMI For Men</h5>
+                <p className="card-text">
                   An ideal BMI range which is considered normal is supposedly
                   between 18.5 to 24.9 kg/m2. BMI below18.5 (approx) is
                   considered underweight and anything between 24.9 to 30
@@ -110,10 +110,10 @@ const Introduction = () => {
                 </p>
               </div>
             </div>
-            <div class="card col-md-6 col-sm-12" style={{ width: "21rem" }}>
-              <div class="card-body">
-                <h5 class="card-title text-center">BMI For Women</h5>
-                <p class="card-text">
+            <div className="card col-md-6 col-sm-12" style={{ width: "21rem" }}>
+              <div className="card-body">
+                <h5 className="card-title text-center">BMI For Women</h5>
+                <p className="card-text">
                   Some studies suggest that the average BMI value for women is
                   slightly lower than men. While some studies have suggested
                   that higher BMI cut offs for women like 32, 33 are normal.
@@ -131,34 +131,34 @@ const Introduction = () => {
           </div>
           <div className="row d-flex justify-content-evenly mt-4 mx-2">
             <div
-              class="bg-light border-bottom border-start border-end col-md-6 col-sm-12 mb-3"
+              className="bg-light border-bottom border-start border-end col-md-6 col-sm-12 mb-3"
               style={{ width: "35rem" }}
             >
-              <h5 class="mt-3">
+              <h5 className="mt-3">
                 What Are The Health Risks For Overweight People
               </h5>
-              <small class="card-text text-muted my-1">
+              <small className="card-text text-muted my-1">
                 An ideal BMI range which is considered normal is supposedly
                 between 18.5 to 24.9 kg/m2. BMI below18.5 (approx) is considered
                 underweight and anything between 24.9 to 30 (approx) is
                 considered overweight:
               </small>
-              <div class="small my-4 d-flex justify-content-between">
-                <ul class="">
-                  <li class="healthRisks">Type 2 diabetes</li>
-                  <li class="healthRisks">Heart conditions</li>
-                  <li class="healthRisks">High triglycerides</li>
-                  <li class="healthRisks">Chances of stroke</li>
+              <div className="small my-4 d-flex justify-content-between">
+                <ul className="">
+                  <li className="healthRisks">Type 2 diabetes</li>
+                  <li className="healthRisks">Heart conditions</li>
+                  <li className="healthRisks">High triglycerides</li>
+                  <li className="healthRisks">Chances of stroke</li>
                 </ul>
-                <ul class="">
-                  <li class="healthRisks">High blood pressure</li>
-                  <li class="healthRisks">
+                <ul className="">
+                  <li className="healthRisks">High blood pressure</li>
+                  <li className="healthRisks">
                     Gall bladder-related complications
                   </li>
-                  <li class="healthRisks">
+                  <li className="healthRisks">
                     Clinical depression and other mental health issues
                   </li>
-                  <li class="healthRisks">
+                  <li className="healthRisks">
                     Polycystic ovarian disease in women which may <br />
                     lead to reduced fertility and other menstrual irregularities
                   </li>
@@ -166,26 +166,26 @@ const Introduction = () => {
               </div>
             </div>
             <div
-              class="bg-light border-bottom border-start border-end col-md-6 col-sm-12 mb-3"
+              className="bg-light border-bottom border-start border-end col-md-6 col-sm-12 mb-3"
               style={{ width: "35rem" }}
             >
-              <h5 class="mt-3">
+              <h5 className="mt-3">
                 What Are The Health Risks For Underweight People
               </h5>
-              <small class="card-text text-muted my-1">
+              <small className="card-text text-muted my-1">
                 Having a low BMI is also associated with health risks, such as
                 the ones listed below:
               </small>
-              <div class="small my-4 d-flex justify-content-between">
-                <ul class="">
-                  <li class="healthRisks">Vitamin deficiencies</li>
-                  <li class="healthRisks">Low immunity</li>
-                  <li class="healthRisks">Osteoporosis</li>
+              <div className="small my-4 d-flex justify-content-between">
+                <ul className="">
+                  <li className="healthRisks">Vitamin deficiencies</li>
+                  <li className="healthRisks">Low immunity</li>
+                  <li className="healthRisks">Osteoporosis</li>
                 </ul>
-                <ul class="">
-                  <li class="healthRisks">Malnutrition</li>
-                  <li class="healthRisks">Hormonal imbalances</li>
-                  <li class="healthRisks">
+                <ul className="">
+                  <li className="healthRisks">Malnutrition</li>
+                  <li className="healthRisks">Hormonal imbalances</li>
+                  <li className="healthRisks">
                     Disruptions in women’s menstrual cycle causing complications
                     in conception
                   </li>
