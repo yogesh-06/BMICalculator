@@ -5,6 +5,7 @@ import Slider3 from "../../Images/Child-Obesity.jpg";
 import Overview from "./Overview";
 import Reports from "./Reports";
 import Preventions from "./Preventions";
+import Solutions from "./Solutions";
 const Overweight = () => {
   return (
     <div className="scroll">
@@ -198,7 +199,7 @@ const Overweight = () => {
           role="tabpanel"
           aria-labelledby="nav-solution-tab"
         >
-          Solutions
+          <Solutions />
         </div>
       </div>
     </div>
