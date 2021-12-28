@@ -8,15 +8,15 @@ const Normalweight = () => {
       <>
         <div
           id="carouselExampleControls"
-          className="carousel slide"
+          class="carousel slide"
           data-bs-ride="carousel"
         >
-          <div className="carousel-indicators">
+          <div class="carousel-indicators">
             <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="0"
-              className="active"
+              class="active"
               aria-current="true"
               aria-label="Slide 1"
             ></button>
@@ -34,40 +34,40 @@ const Normalweight = () => {
             ></button>
           </div>
 
-          <div className="carousel-inner">
-            <div className="carousel-item active">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
               <div className="d-flex justify-content-center">
                 <img className="container pb-3 pt-1" src={Slider1} alt="" />
               </div>
             </div>
-            <div className="carousel-item">
+            <div class="carousel-item">
               <div className="d-flex justify-content-center">
                 <img className="container pb-3 pt-1" src={Slider2} alt="" />
               </div>
             </div>
-            <div className="carousel-item">
+            <div class="carousel-item">
               <div className="d-flex justify-content-center">
                 <img className="container pb-3 pt-1" src={Slider3} alt="" />
               </div>
             </div>
           </div>
           <button
-            className="carousel-control-prev "
+            class="carousel-control-prev "
             type="button"
             data-bs-target="#carouselExampleControls"
             data-bs-slide="prev"
           >
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </button>
           <button
-            className="carousel-control-next"
+            class="carousel-control-next"
             type="button"
             data-bs-target="#carouselExampleControls"
             data-bs-slide="next"
           >
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
           </button>
         </div>
         <div className="container">

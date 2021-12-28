@@ -59,18 +59,18 @@ const Preventions = () => {
                   <span className="fw-bold me-2">
                     Eating a healthy diet can help in preventing obesity- :
                   </span>
-                  <div className="small my-2 d-flex justify-content-between">
-                    <ul className="">
-                      <li className="healthRisks">
+                  <div class="small my-2 d-flex justify-content-between">
+                    <ul class="">
+                      <li class="healthRisks">
                         Limit total fat intake and shift fat consumption away
                         from saturated fats to unsaturated fats and elimination
                         of trans fats.
                       </li>
-                      <li className="healthRisks">
+                      <li class="healthRisks">
                         Increase consumption of fruits, vegetables, pulses,
                         whole grains, legumes and nuts.
                       </li>
-                      <li className="healthRisks">
+                      <li class="healthRisks">
                         Limit intake of sugar and salt.
                       </li>
                     </ul>
@@ -85,22 +85,22 @@ const Preventions = () => {
                   the week for adults). At least 30 minutes of regular,
                   moderate-intensity physical activity on most days reduces the
                   risk of obesity and co-morbidities.
-                  <div className="small my-2 d-flex justify-content-between">
-                    <ul className="">
-                      <li className="healthRisks">
+                  <div class="small my-2 d-flex justify-content-between">
+                    <ul class="">
+                      <li class="healthRisks">
                         reducing the fat, sugar and salt content of processed
                         foods.
                       </li>
-                      <li className="healthRisks">
+                      <li class="healthRisks">
                         ensuring that healthy and nutritious choices are
                         available and affordable to all consumers.
                       </li>
-                      <li className="healthRisks">
+                      <li class="healthRisks">
                         restricting marketing of foods high in sugars, salt and
                         fats, especially those foods aimed at children and
                         teenagers.
                       </li>
-                      <li className="healthRisks">
+                      <li class="healthRisks">
                         ensuring the availability of healthy food choices and
                         supporting regular physical activity practice in the
                         workplace.

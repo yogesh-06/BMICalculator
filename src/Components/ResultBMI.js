@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 const ResultBMI = ({ BMI, BMIstatus, className, range, advice, button }) => {
-console.log("***",BMI, BMIstatus, className, range, advice, button)
-
   return (
     <>
       <div
@@ -68,7 +66,7 @@ console.log("***",BMI, BMIstatus, className, range, advice, button)
           <div className="d-flex justify-content-around row align-items-between">
             <small className="fw-bold text-muted col-md-8 col-sm-12">
               {advice}
-              <span className="text-dark m-2">
+              <span className="text-dark">
                 Click the button for get health tips.
               </span>
             </small>

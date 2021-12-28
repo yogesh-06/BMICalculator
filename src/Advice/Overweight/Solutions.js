@@ -22,15 +22,15 @@ const Solutions = () => {
         </div>
         <div
           id="carouselExampleIndicators"
-          className="carousel slide"
+          class="carousel slide"
           data-bs-ride="carousel"
         >
-          <div className="carousel-indicators">
+          <div class="carousel-indicators">
             <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="0"
-              className="active"
+              class="active"
               aria-current="true"
               aria-label="Slide 1"
             ></button>
@@ -47,12 +47,12 @@ const Solutions = () => {
               aria-label="Slide 3"
             ></button>
           </div>
-          <div className="carousel-inner my-3">
-            <div className="carousel-item active ">
+          <div class="carousel-inner my-3">
+            <div class="carousel-item active ">
               <div className="row d-flex">
                 <img
                   src={Slider1}
-                  className="d-block col-md-6 col-sm-12"
+                  class="d-block col-md-6 col-sm-12"
                   alt="..."
                 />
                 <div className="col-md-6 col-sm-12">
@@ -68,11 +68,11 @@ const Solutions = () => {
                 </div>
               </div>
             </div>
-            <div className="carousel-item">
+            <div class="carousel-item">
               <div className="row d-flex">
                 <img
                   src={Slider1}
-                  className="d-block col-md-6 col-sm-12"
+                  class="d-block col-md-6 col-sm-12"
                   alt="..."
                 />
                 <div className="col-md-6 col-sm-12">
@@ -88,11 +88,11 @@ const Solutions = () => {
                 </div>
               </div>
             </div>
-            <div className="carousel-item">
+            <div class="carousel-item">
               <div className="row d-flex">
                 <img
                   src={Slider1}
-                  className="d-block col-md-6 col-sm-12"
+                  class="d-block col-md-6 col-sm-12"
                   alt="..."
                 />
                 <div className="col-md-6 col-sm-12">
@@ -110,22 +110,22 @@ const Solutions = () => {
             </div>
           </div>
           <button
-            className="carousel-control-prev"
+            class="carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev"
           >
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </button>
           <button
-            className="carousel-control-next"
+            class="carousel-control-next"
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next"
           >
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
           </button>
         </div>
       </div>

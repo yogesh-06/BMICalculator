@@ -11,15 +11,15 @@ const Overweight = () => {
     <div className="scroll">
       <div
         id="carouselExampleControls"
-        className="carousel slide"
+        class="carousel slide"
         data-bs-ride="carousel"
       >
-        <div className="carousel-indicators">
+        <div class="carousel-indicators">
           <button
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide-to="0"
-            className="active"
+            class="active"
             aria-current="true"
             aria-label="Slide 1"
           ></button>
@@ -37,40 +37,40 @@ const Overweight = () => {
           ></button>
         </div>
 
-        <div className="carousel-inner">
-          <div className="carousel-item active">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
             <div className="d-flex justify-content-center">
               <img className="container pb-3 pt-1" src={Slider1} alt="" />
             </div>
           </div>
-          <div className="carousel-item">
+          <div class="carousel-item">
             <div className="d-flex justify-content-center">
               <img className="container pb-3 pt-1" src={Slider2} alt="" />
             </div>
           </div>
-          <div className="carousel-item">
+          <div class="carousel-item">
             <div className="d-flex justify-content-center">
               <img className="container pb-3 pt-1" src={Slider3} alt="" />
             </div>
           </div>
         </div>
         <button
-          className="carousel-control-prev "
+          class="carousel-control-prev "
           type="button"
           data-bs-target="#carouselExampleControls"
           data-bs-slide="prev"
         >
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </button>
         <button
-          className="carousel-control-next"
+          class="carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleControls"
           data-bs-slide="next"
         >
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
         </button>
       </div>
       {/*   <div className="container">
@@ -117,9 +117,9 @@ const Overweight = () => {
         className="py-1"
         style={{ position: "sticky", top: "56px", backgroundColor: "white" }}
       >
-        <div className="nav nav-tabs ps-2" id="nav-tab" role="tablist">
+        <div class="nav nav-tabs ps-2" id="nav-tab" role="tablist">
           <button
-            className="nav-link active"
+            class="nav-link active"
             id="nav-home-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-home"
@@ -131,7 +131,7 @@ const Overweight = () => {
             Overview
           </button>
           <button
-            className="nav-link"
+            class="nav-link"
             id="nav-profile-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-profile"
@@ -143,7 +143,7 @@ const Overweight = () => {
             Reports
           </button>
           <button
-            className="nav-link"
+            class="nav-link"
             id="nav-contact-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-contact"
@@ -155,7 +155,7 @@ const Overweight = () => {
             Preventions
           </button>
           <button
-            className="nav-link"
+            class="nav-link"
             id="nav-solution-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-solution"
@@ -168,9 +168,9 @@ const Overweight = () => {
           </button>
         </div>
       </nav>
-      <div className="tab-content" id="nav-tabContent">
+      <div class="tab-content" id="nav-tabContent">
         <div
-          className="tab-pane fade show active"
+          class="tab-pane fade show active"
           id="nav-home"
           role="tabpanel"
           aria-labelledby="nav-home-tab"
@@ -178,7 +178,7 @@ const Overweight = () => {
           <Overview />
         </div>
         <div
-          className="tab-pane fade"
+          class="tab-pane fade"
           id="nav-profile"
           role="tabpanel"
           aria-labelledby="nav-profile-tab"
@@ -186,7 +186,7 @@ const Overweight = () => {
           <Reports />
         </div>
         <div
-          className="tab-pane fade"
+          class="tab-pane fade"
           id="nav-contact"
           role="tabpanel"
           aria-labelledby="nav-contact-tab"
@@ -194,7 +194,7 @@ const Overweight = () => {
           <Preventions />
         </div>
         <div
-          className="tab-pane fade"
+          class="tab-pane fade"
           id="nav-solution"
           role="tabpanel"
           aria-labelledby="nav-solution-tab"

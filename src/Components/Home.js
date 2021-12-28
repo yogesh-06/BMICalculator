@@ -3,9 +3,7 @@ import React, { useState } from "react";
 import ResultBMI from "./ResultBMI";
 import CalculateBMI from "./CalculateBMI";
 import InfoModal from "./InfoModal";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-
+import Alerts from "./Alerts";
 // import Introduction from "./Introduction";
 // import Introduction from "./Introduction";
 const Home = () => {
@@ -18,24 +16,13 @@ const Home = () => {
   const [className, setClassName] = useState("");
   const [advice, setAdvice] = useState("");
   const [range, setRange] = useState(18);
+  const [alert, setAlert] = useState(false);
   const [button, setButton] = useState("");
 
   const calculateBMI = (height, weight) => {
     console.log("---", height, weight, heightUnit, weightUnit);
     setBMI(null);
     let data;
-
-    console.log(weight, height);
-
-    if (weight === "" || height === "") {
-      // setAlert(true);
-      // setTimeout(() => {
-      //   setAlert(false);
-      // }, 3000);
-      console.log("---");
-      toast("Please enter valid height and width ");
-      return;
-    }
 
     if (heightUnit === "FeetAndInches") {
       data = weight / (height / 3.2808) ** 2;
@@ -44,6 +31,9 @@ const Home = () => {
       setBMI(weight / (height / 100) ** 2);
       data = weight / (height / 100) ** 2;
     }
+    console.log("Result:-", BMI);
+    console.log("Range", range);
+
     if (data < 18) {
       setBMIstatus("Underweight");
       setClassName("bg-primary");
@@ -77,8 +67,18 @@ const Home = () => {
       setButton("/Overweight");
       setRange(data);
     }
+
+    if (weight === "" || height === "") {
+      setAlert(true);
+      setTimeout(() => {
+        setAlert(false);
+      }, 3000);
+    }
   };
 
+  // (heightUnit === "FeetAndInches" && height >= 10) ||
+  // (heightUnit === "Centimetres" && height >= 200)
+  console.log(button, "button");
   return (
     <>
       <div
@@ -110,7 +110,9 @@ const Home = () => {
               }
         }
       >
-        {BMI ? (
+        {alert ? (
+          <Alerts />
+        ) : (
           <ResultBMI
             BMI={BMI}
             BMIstatus={BMIstatus}
@@ -119,8 +121,7 @@ const Home = () => {
             advice={advice}
             button={button}
           />
-        ) : ''}
-
+        )}
         <CalculateBMI
           setHeightUnit={setHeightUnit}
           setWeightUnit={setWeightUnit}
@@ -131,19 +132,6 @@ const Home = () => {
           calculateBMI={calculateBMI}
         />
         <InfoModal />
-
-        <ToastContainer
-          position="top-right"
-          autoClose={1000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-        />
-        <ToastContainer />
       </div>
       {/* <div id="Introduction">
         <Introduction />
