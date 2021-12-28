@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-// import Navbar from "./Navbar";
 import ResultBMI from "./ResultBMI";
 import CalculateBMI from "./CalculateBMI";
 import InfoModal from "./InfoModal";
 import Alerts from "./Alerts";
-// import Introduction from "./Introduction";
-// import Introduction from "./Introduction";
+import Introduction from "./Introduction";
 const Home = () => {
   const [heightUnit, setHeightUnit] = useState("FeetAndInches");
   const [weightUnit, setWeightUnit] = useState();
@@ -133,9 +131,7 @@ const Home = () => {
         />
         <InfoModal />
       </div>
-      {/* <div id="Introduction">
-        <Introduction />
-      </div> */}
+      <Introduction />
     </>
   );
 };

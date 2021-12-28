@@ -4,10 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <nav
-        className="navbar navbar-expand-lg navbar-light sticky-top bg-light"
-        // style={{ backgroundColor: "#255, 97, 97" }}
-      >
+      <nav className="navbar navbar-expand-lg navbar-light sticky-top bg-light navpad">
         <div className="container-fluid">
           <Link
             to="/BMICalculator"
@@ -23,51 +20,6 @@ const Navbar = () => {
             />
             <small className="fw-bold">BMI Calculator</small>
           </Link>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link
-                  to="/Introduction"
-                  className="nav-link active"
-                  aria-current="page"
-                  href="/"
-                >
-                  Introduction
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link
-                  to="/Overweight"
-                  className="nav-link active"
-                  aria-current="page"
-                  href="/"
-                >
-                  Obesity & Overweight
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="/Underweight"
-                  className="nav-link active"
-                  aria-current="page"
-                  href="/"
-                >
-                  Malnutritian
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="/Normalweight"
-                  className="nav-link active"
-                  aria-current="page"
-                  href="/"
-                >
-                  Fit & Healthy
-                </Link>
-              </li>
-            </ul>
-          </div>
           <button
             className="navbar-toggler"
             type="button"
@@ -79,6 +31,61 @@ const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item navHover">
+                <Link
+                  to="/BMICalculator"
+                  className="nav-link active"
+                  aria-current="page"
+                  href="/"
+                >
+                  Home
+                </Link>
+              </li>
+
+              <li className="nav-item navHover">
+                <Link
+                  to="/Overweight"
+                  className="nav-link active"
+                  aria-current="page"
+                  href="/"
+                >
+                  Obesity & Overweight
+                </Link>
+              </li>
+              <li className="nav-item navHover">
+                <Link
+                  to="/Underweight"
+                  className="nav-link active"
+                  aria-current="page"
+                  href="/"
+                >
+                  Malnutritian
+                </Link>
+              </li>
+              <li className="nav-item navHover">
+                <Link
+                  to="/Normalweight"
+                  className="nav-link active"
+                  aria-current="page"
+                  href="/"
+                >
+                  Fit & Healthy
+                </Link>
+              </li>
+              <li className="nav-item navHover">
+                <Link
+                  to="/AboutUs"
+                  className="nav-link active"
+                  aria-current="page"
+                  href="/"
+                >
+                  About Developer
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </>

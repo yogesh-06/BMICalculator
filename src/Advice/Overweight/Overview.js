@@ -5,12 +5,12 @@ import ObesityCauses from "../../Images/CausesOfObesity.jpg";
 const Overview = () => {
   return (
     <>
-      <div className="container py-4" id="WhatIsBMI">
-        <div className="px-3 fs-3">
+      <div className="container mt-3" id="WhatIsBMI">
+        <div className="px-3 fs-3 ">
           <span className="fw-bold me-2">Overview</span>
         </div>
-        <div className="row align-items-center my-2">
-          <div className="col-md-8 col-sm-12 intro">
+        <div className="row align-items-center">
+          <div className="col-md-8 col-sm-12 intro py-2">
             Obesity in India has reached epidemic proportions in the 21st
             century, with morbid obesity affecting 5% of the country's
             population.[1] India is following a trend of other developing
@@ -40,41 +40,41 @@ const Overview = () => {
               Weight gain usually occurs over time. Most people know when
               they've gained weight. Some of the signs of overweight or obesity
               include:
-              <div class="small my-4 d-flex justify-content-between">
-                <ul class="">
-                  <li class="healthRisks">
+              <div className="small my-4 d-flex justify-content-between">
+                <ul className="">
+                  <li className="healthRisks">
                     Clothes feeling tight and needing a larger size
                   </li>
-                  <li class="healthRisks">
+                  <li className="healthRisks">
                     Weight gain as compared to previous measurement
                   </li>
-                  <li class="healthRisks">
+                  <li className="healthRisks">
                     Having extra fat around the waist.
                   </li>
-                  <li class="healthRisks">Back and joint pains</li>
-                  <li class="healthRisks">
+                  <li className="healthRisks">Back and joint pains</li>
+                  <li className="healthRisks">
                     Feeling tired even with routine activities
                   </li>
                 </ul>
-                <ul class="">
-                  <li class="healthRisks">
+                <ul className="">
+                  <li className="healthRisks">
                     A higher than normal body mass index (a person's weight in
                     kilograms divided by the square of his height in meters
                     (kg/m2)) and waist circumference. Other symptom may be:
                   </li>
-                  <li class="healthRisks">Breathlessness</li>
-                  <li class="healthRisks">
+                  <li className="healthRisks">Breathlessness</li>
+                  <li className="healthRisks">
                     Psychological problems such as low self –esteem, low
                     confidence level
                   </li>
-                  <li class="healthRisks">
+                  <li className="healthRisks">
                     Without proper treatment obesity can lead to various health
                     problems as dyslipidaemia, hypertension, type 2 diabetes,
                     coronary heart disease, stroke, osteoarthritis, cancer,
                     infertility, sleep apnea.
                   </li>
-                  <li class="healthRisks">Increased sweating</li>
-                  <li class="healthRisks">
+                  <li className="healthRisks">Increased sweating</li>
+                  <li className="healthRisks">
                     Inability to cope with sudden physical activity
                   </li>
                 </ul>
@@ -102,16 +102,16 @@ const Overview = () => {
             time will lead to weight gain. The reasons for the imbalance between
             calorie intake and energy out may vary from individual to
             individual.
-            <div class="small mt-4 d-flex justify-content-between">
-              <ul class="">
-                <li class="healthRisks">
+            <div className="small mt-4 d-flex justify-content-between">
+              <ul className="">
+                <li className="healthRisks">
                   <span className="fw-bold me-2">Emotional factors-</span>
                   For some people, eating habits are influenced by emotions such
                   as sadness, stress, boredom or anger and they react by eating
                   excessively.
                 </li>
 
-                <li class="healthRisks">
+                <li className="healthRisks">
                   <span className="fw-bold me-2">Unhealthy diet-</span>
                   Diet rich in calories (fast foods), high calorie beverages,
                   oversized portions, bad eating habits (eating between meals,
@@ -128,40 +128,40 @@ const Overview = () => {
             alt=""
           />
         </div>
-        <div class="small d-flex justify-content-between">
-          <ul class="">
-            <li class="healthRisks">
+        <div className="small d-flex justify-content-between">
+          <ul className="">
+            <li className="healthRisks">
               <span className="fw-bold me-2">Genetics</span>
               may play a role in conversion of food into energy and how body
               burns calories during exercise. Genes may affect the amount of fat
               storage and distribution of fat in body.
             </li>
-            <li class="healthRisks">
+            <li className="healthRisks">
               <span className="fw-bold me-2">Pregnancy-</span>
               Woman gain weight during pregnancy and, some women find it
               difficult to lose weight after child birth. This weight gain may
               contribute to the development of obesity in women.
             </li>
-            <li class="healthRisks">
+            <li className="healthRisks">
               <span className="fw-bold me-2">Lack of sleep-</span>
               Not having enough sleep or getting too much sleep can cause
               changes in hormones that may increase appetite and craving for
               foods high in calories and carbohydrates, which can contribute to
               weight gain.
             </li>
-            <li class="healthRisks">
+            <li className="healthRisks">
               <span className="fw-bold me-2">Medicines-</span>
               Certain medicines such as corticosteroids, antidepressants and
               medicines used for seizure control may cause weight gain.
             </li>
 
-            <li class="healthRisks">
+            <li className="healthRisks">
               <span className="fw-bold me-2">Smoking-</span>
               Quitting smoking is often associated with weight gain. However,
               smoking is a serious health risk, and quitting is more important
               than possible weight gain.
             </li>
-            <li class="healthRisks">
+            <li className="healthRisks">
               <span className="fw-bold me-2">Age-</span>
               Obesity can occur at any age, even in young children. Infants with
               excessive weight have increased chances of obesity in later life.

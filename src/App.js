@@ -6,6 +6,8 @@ import Navbar from "./Components/Navbar";
 import Normalweight from "./Advice/Normalweight/Normalweight";
 import Underweight from "./Advice/Underweight/Underweight";
 import Overweight from "./Advice/Overweight/Overweight";
+import AboutUs from "./Components/AboutUs";
+import Footer from "./Components/Footer";
 function App() {
   return (
     <div>
@@ -27,7 +29,12 @@ function App() {
           <Route exact path="/Introduction">
             <Introduction />
           </Route>
+          <Route exact path="/AboutUs">
+            <AboutUs />
+          </Route>
+          <Footer />
         </Switch>
+        <Footer />
       </Router>
     </div>
   );
