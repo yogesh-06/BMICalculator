@@ -5,7 +5,9 @@ import CalculateBMI from "./CalculateBMI";
 import InfoModal from "./InfoModal";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Introduction from "./Introduction";
+
+// import Introduction from "./Introduction";
+// import Introduction from "./Introduction";
 const Home = () => {
   const [heightUnit, setHeightUnit] = useState("FeetAndInches");
   const [weightUnit, setWeightUnit] = useState();
@@ -117,9 +119,7 @@ const Home = () => {
             advice={advice}
             button={button}
           />
-        ) : (
-          ""
-        )}
+        ) : ''}
 
         <CalculateBMI
           setHeightUnit={setHeightUnit}
@@ -145,8 +145,9 @@ const Home = () => {
         />
         <ToastContainer />
       </div>
-
-      <Introduction />
+      {/* <div id="Introduction">
+        <Introduction />
+      </div> */}
     </>
   );
 };

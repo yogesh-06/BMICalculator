@@ -115,7 +115,7 @@ const Overweight = () => {
       </div> */}
       <nav
         className="py-1"
-        style={{ position: "sticky", top: "60px", backgroundColor: "white" }}
+        style={{ position: "sticky", top: "56px", backgroundColor: "white" }}
       >
         <div className="nav nav-tabs ps-2" id="nav-tab" role="tablist">
           <button
