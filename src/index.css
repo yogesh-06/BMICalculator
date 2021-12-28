@@ -50,6 +50,10 @@
   color: black;
   cursor: pointer;
 }
+.navhover:hover {
+  border-bottom: solid 2px red;
+  background-color: rgb(240, 240, 240);
+}
 
 .healthRisks::before {
   content: "\2022";
@@ -60,13 +64,25 @@
   margin-left: -1em;
 }
 .scroll {
-  overflow-y: "auto";
-  overflow-x: "hidden";
+  overflow-y: auto;
+  overflow-x: hidden;
   max-height: "600px";
 }
 .ObesityReasons {
   width: 500px;
   height: 500px;
+}
+.instaHover:hover {
+  color: rgb(145, 72, 142);
+}
+.fbHover:hover {
+  color: #4267b2;
+}
+.twitterHover:hover {
+  color: #00acee;
+}
+.youtubeHover:hover {
+  color: red;
 }
 
 @media screen and (max-width: 768px) {
@@ -96,7 +112,7 @@
   }
 }
 
-body{
-font-family: 'Montserrat', sans-serif;
-font-family: 'Readex Pro', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Readex Pro", sans-serif;
 }
