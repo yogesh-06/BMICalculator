@@ -1,4 +1,3 @@
-import Home from "./Components/Home";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Introduction from "./Components/Introduction";
@@ -8,6 +7,7 @@ import Underweight from "./Advice/Underweight/Underweight";
 import Overweight from "./Advice/Overweight/Overweight";
 import AboutUs from "./Components/AboutUs";
 import Footer from "./Components/Footer";
+import BMICalculator from "./Components/BMICalculator";
 function App() {
   return (
     <div>
@@ -15,7 +15,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/BMICalculator">
-            <Home />
+            <BMICalculator />
           </Route>
           <Route exact path="/Underweight">
             <Underweight />

@@ -13,8 +13,8 @@ const calculateBMI = ({
   calculateBMI,
 }) => {
   const schema = Yup.object({
-    height: Yup.string().required(),
-    weight: Yup.string().required(),
+    height: Yup.number().required(),
+    weight: Yup.number().required(),
   });
   return (
     <>
@@ -35,7 +35,7 @@ const calculateBMI = ({
           touched,
           isValid,
         }) => (
-          <div className="container text-light mb-2">
+          <div className="container text-light pt-2 mb-2">
             {console.log(errors)}
 
             <div className="row mb-2">
@@ -144,7 +144,7 @@ const calculateBMI = ({
 
             <button
               type="button"
-              className="btn btn-sm btn-light mt-2 px-3 py-2"
+              className="btn btn-sm btn-light mt-2 px-3 py-2 calculate"
               onClick={() => calculateBMI(height, weight)}
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasBottom"

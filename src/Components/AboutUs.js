@@ -1,6 +1,6 @@
 import React from "react";
 import Contact from "../Images/AboutUs.jpg";
-import Developer from "../Images/Developer.jpg";
+import Developer from "../Images/Developer1.jpg";
 const AboutUs = () => {
   return (
     <>
@@ -48,9 +48,21 @@ const AboutUs = () => {
             I am Front-End Web Developer. I’m working as web developer. i have
             developed many website and also provided my services to college
             students by getting their projects ready ASAP as a freelancer I have
-            been part of some very good web design projects. <br /> My Skill Set
-            : HTML5, CSS3, JavaScript. I'm also learning Back-End Development
-            and looking forward to be a Full Stack Web Developer.
+            been part of some very good web design projects. I'm also learning
+            Back-End Development and looking forward to be a Full Stack Web
+            Developer. <br />
+            <div className="pt-2">
+              My skill sets :
+              <div className="text-primary d-flex justify-content-evenly">
+                <div className="border-end border-dark pe-2">HTML-5</div>
+                <div className="border-end border-dark pe-2">CSS-3</div>
+                <div className="border-end border-dark pe-2">Bootstrap-5</div>
+                <div className="border-end border-dark pe-2">
+                  JavaScript-Es6
+                </div>
+                <div className="border-end border-dark pe-2">React-js</div>
+              </div>
+            </div>
           </span>
         </div>
       </div>

@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState } from "react/cjs/react.development";
 // import Logo from "../Images/Logo.png";
 const Navbar = () => {
+  const [activeMenu, setactiveMenu] = useState("BMICalculator");
+  const handleClick = (e) => {
+    setactiveMenu(e);
+  };
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light sticky-top bg-light navpad">
@@ -33,53 +38,73 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item navHover">
+              <li
+                className={`nav-item navHover ${
+                  activeMenu === "BMICalculator" && "navActive"
+                }`}
+              >
                 <Link
                   to="/BMICalculator"
                   className="nav-link active"
                   aria-current="page"
-                  href="/"
+                  onClick={() => handleClick("BMICalculator")}
                 >
-                  Home
+                  BMI Calculator
                 </Link>
               </li>
 
-              <li className="nav-item navHover">
+              <li
+                className={`nav-item navHover ${
+                  activeMenu === "Overweight" && "navActive"
+                }`}
+              >
                 <Link
                   to="/Overweight"
                   className="nav-link active"
                   aria-current="page"
-                  href="/"
+                  onClick={() => handleClick("Overweight")}
                 >
                   Obesity & Overweight
                 </Link>
               </li>
-              <li className="nav-item navHover">
+              <li
+                className={`nav-item navHover ${
+                  activeMenu === "Underweight" && "navActive"
+                }`}
+              >
                 <Link
                   to="/Underweight"
                   className="nav-link active"
                   aria-current="page"
-                  href="/"
+                  onClick={() => handleClick("Underweight")}
                 >
                   Malnutrition
                 </Link>
               </li>
-              <li className="nav-item navHover">
+              <li
+                className={`nav-item navHover ${
+                  activeMenu === "Normalweight" && "navActive"
+                }`}
+              >
                 <Link
                   to="/Normalweight"
                   className="nav-link active"
                   aria-current="page"
-                  href="/"
+                  onClick={() => handleClick("Normalweight")}
                 >
                   Fit & Healthy
                 </Link>
               </li>
-              <li className="nav-item navHover">
+              <li
+                className={`nav-item navHover ${
+                  activeMenu === "AboutUs" && "navActive"
+                }`}
+              >
                 <Link
                   to="/AboutUs"
                   className="nav-link active"
                   aria-current="page"
-                  href="/"
+                  onClick={() => handleClick("AboutUs")}
                 >
                   About Developer
                 </Link>

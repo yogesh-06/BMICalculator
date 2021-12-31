@@ -56,13 +56,7 @@ const ResultBMI = ({ BMI, BMIstatus, className, range, advice, button }) => {
             value={range * 2}
             readOnly
           />
-          {/* <small className="p-0 text-muted">
-            {advice}
-            <a href="https://www.zerofasting.com/" className="fs-6">
-              our free courses.
-            </a>
-          </small>
-          */}
+
           <div className="d-flex justify-content-around row align-items-between">
             <small className="fw-bold text-muted col-md-8 col-sm-12">
               {advice}
@@ -83,3 +77,38 @@ const ResultBMI = ({ BMI, BMIstatus, className, range, advice, button }) => {
   );
 };
 export default ResultBMI;
+
+//  <div className="progress">
+//    <div
+//      className="progress-bar"
+//      role="progressbar"
+//      aria-valuenow="15"
+//      aria-valuemin="0"
+//      aria-valuemax="18.5"
+//      style={{ width: "25%" }}
+//    ></div>
+//    <div
+//      className="progress-bar bg-success"
+//      role="progressbar"
+//      aria-valuenow="15"
+//      aria-valuemin="0"
+//      aria-valuemax="18.5"
+//      style={{ width: "25%" }}
+//    ></div>
+//    <div
+//      className="progress-bar bg-warning"
+//      role="progressbar"
+//      aria-valuenow="15"
+//      aria-valuemin="0"
+//      aria-valuemax="18.5"
+//      style={{ width: "25%" }}
+//    ></div>
+//    <div
+//      className="progress-bar bg-danger"
+//      role="progressbar"
+//      aria-valuenow="15"
+//      aria-valuemin="0"
+//      aria-valuemax="18.5"
+//      style={{ width: "25%" }}
+//    ></div>
+//  </div>;

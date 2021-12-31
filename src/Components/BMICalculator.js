@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import ResultBMI from "./ResultBMI";
 import CalculateBMI from "./CalculateBMI";
 import InfoModal from "./InfoModal";
-import Alerts from "./Alerts";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Introduction from "./Introduction";
-const Home = () => {
+
+const BMICalculator = () => {
   const [heightUnit, setHeightUnit] = useState("FeetAndInches");
   const [weightUnit, setWeightUnit] = useState();
   const [height, setHeight] = useState("");
@@ -14,13 +16,24 @@ const Home = () => {
   const [className, setClassName] = useState("");
   const [advice, setAdvice] = useState("");
   const [range, setRange] = useState(18);
-  const [alert, setAlert] = useState(false);
   const [button, setButton] = useState("");
-
+  const [cardRow, setCardRow] = useState(true);
   const calculateBMI = (height, weight) => {
     console.log("---", height, weight, heightUnit, weightUnit);
     setBMI(null);
     let data;
+
+    console.log(weight, height);
+
+    if (weight === "" || height === "") {
+      // setAlert(true);
+      // setTimeout(() => {
+      //   setAlert(false);
+      // }, 3000);
+      console.log("---");
+      toast("Please enter valid height and width ");
+      return;
+    }
 
     if (heightUnit === "FeetAndInches") {
       data = weight / (height / 3.2808) ** 2;
@@ -29,9 +42,6 @@ const Home = () => {
       setBMI(weight / (height / 100) ** 2);
       data = weight / (height / 100) ** 2;
     }
-    console.log("Result:-", BMI);
-    console.log("Range", range);
-
     if (data < 18) {
       setBMIstatus("Underweight");
       setClassName("bg-primary");
@@ -65,24 +75,14 @@ const Home = () => {
       setButton("/Overweight");
       setRange(data);
     }
-
-    if (weight === "" || height === "") {
-      setAlert(true);
-      setTimeout(() => {
-        setAlert(false);
-      }, 3000);
-    }
   };
 
-  // (heightUnit === "FeetAndInches" && height >= 10) ||
-  // (heightUnit === "Centimetres" && height >= 200)
-  console.log(button, "button");
   return (
     <>
       <div
         className="pb-2"
         style={
-          BMI < 18
+          BMI > 0 && BMI < 18
             ? {
                 height: "100vh",
                 background: "linear-gradient(to bottom,#c468cc,#195eff )",
@@ -108,9 +108,7 @@ const Home = () => {
               }
         }
       >
-        {alert ? (
-          <Alerts />
-        ) : (
+        {BMI ? (
           <ResultBMI
             BMI={BMI}
             BMIstatus={BMIstatus}
@@ -119,7 +117,10 @@ const Home = () => {
             advice={advice}
             button={button}
           />
+        ) : (
+          ""
         )}
+
         <CalculateBMI
           setHeightUnit={setHeightUnit}
           setWeightUnit={setWeightUnit}
@@ -130,9 +131,22 @@ const Home = () => {
           calculateBMI={calculateBMI}
         />
         <InfoModal />
+
+        <ToastContainer
+          position="top-right"
+          autoClose={1000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
       </div>
-      <Introduction />
+
+      <Introduction cardRow={cardRow} setCardRow={setCardRow} />
     </>
   );
 };
-export default Home;
+export default BMICalculator;

@@ -1,7 +1,7 @@
 import React from "react";
-import Slider1 from "../../Images/Obesity-The-biggest-threat-to-India.jpg";
-import Slider2 from "../../Images/OverweightLady.jpg";
-import Slider3 from "../../Images/Child-Obesity.jpg";
+import Slider1 from "../../Images/FitnessSlider1.jpg";
+import Slider2 from "../../Images/FitnessSlider2.jpg";
+import Slider3 from "../../Images/FitnessSlider3.jpg";
 const Normalweight = () => {
   return (
     <>
@@ -37,17 +37,29 @@ const Normalweight = () => {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <div className="d-flex justify-content-center">
-                <img className="container pb-3 pt-1" src={Slider1} alt="" />
+                <img
+                  className="container pb-3 pt-1 fitnessSlider"
+                  src={Slider1}
+                  alt=""
+                />
               </div>
             </div>
             <div className="carousel-item">
               <div className="d-flex justify-content-center">
-                <img className="container pb-3 pt-1" src={Slider2} alt="" />
+                <img
+                  className="container pb-3 pt-1 fitnessSlider"
+                  src={Slider2}
+                  alt=""
+                />
               </div>
             </div>
             <div className="carousel-item">
               <div className="d-flex justify-content-center">
-                <img className="container pb-3 pt-1" src={Slider3} alt="" />
+                <img
+                  className="container pb-3 pt-1 fitnessSlider"
+                  src={Slider3}
+                  alt=""
+                />
               </div>
             </div>
           </div>

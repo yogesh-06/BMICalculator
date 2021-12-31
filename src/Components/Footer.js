@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="row align-items-start">
             <div className="col-md-3 col-sm-6 my-4">
               <div
-                className="text-danger bg-light"
+                className="text-danger mb-1"
                 style={{ display: "flex", alignItems: "flex-end" }}
               >
                 <img

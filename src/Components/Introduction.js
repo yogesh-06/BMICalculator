@@ -2,7 +2,7 @@ import React from "react";
 import Man from "../Images/man.svg";
 import Women from "../Images/women.svg";
 import BMImeasure from "../Images/BMI-measure.png";
-const Introduction = () => {
+const Introduction = ({ cardRow, setCardRow }) => {
   return (
     <>
       <div className="scroll">
@@ -89,71 +89,151 @@ const Introduction = () => {
               className="d-inline-flex text-muted fw-bold mute p-1 mt-3 px-2 d-flex justify-content-center rounded-3"
               style={{ backgroundColor: "lightgray" }}
             >
-              <div className="fs-6 px-3 py-1  me-2 rounded-3">What is BMI?</div>
-              <div className="fs-6 px-3 py-1  rounded-3 mute">
+              <div
+                className={
+                  cardRow
+                    ? "px-3 py-1 my-1 text-danger me-1 rounded-3 bg-light"
+                    : "px-3 py-1 my-1 me-1 rounded-3 mute"
+                }
+                onClick={() => setCardRow(true)}
+              >
+                What is BMI?
+              </div>
+              <div
+                className={
+                  !cardRow
+                    ? " px-3 py-1 my-1 text-danger  rounded-3 bg-light"
+                    : " px-3 py-1 my-1  rounded-3 mute"
+                }
+                onClick={() => setCardRow(false)}
+              >
                 What is one calculate BMI?
               </div>
             </div>
           </div>
-          <div className="row d-flex justify-content-evenly ">
-            <div
-              className="card col-md-6 col-sm-12 shadow mt-3"
-              style={{ width: "21rem" }}
-            >
-              <div className="card-body">
-                <h5 className="card-title">
-                  <img
-                    src="https://www.hdfcergo.com/images/default-source/health-insurance/bmi-definition.svg?sfvrsn=7f7a28dc_2"
-                    alt=""
-                  />
-                  <span className="fs-4 ms-2"> BMI Definition</span>
-                </h5>
-                <p className="card-text">
-                  Body Mass Index (BMI) is extensively used as an indicator of
-                  body fat content. Knowing only the weight is not adequate to
-                  determine if a person is on a healthy weight range.
-                </p>
+          {cardRow ? (
+            <div className="row d-flex justify-content-evenly ">
+              <div
+                className="card col-md-6 col-sm-12 shadow mt-3"
+                style={{ width: "21rem" }}
+              >
+                <div className="card-body">
+                  <h5 className="card-title">
+                    <img
+                      src="https://www.hdfcergo.com/images/default-source/health-insurance/bmi-definition.svg?sfvrsn=7f7a28dc_2"
+                      alt=""
+                    />
+                    <span className="fs-4 ms-2"> BMI Definition</span>
+                  </h5>
+                  <p className="card-text">
+                    Body Mass Index (BMI) is extensively used as an indicator of
+                    body fat content. Knowing only the weight is not adequate to
+                    determine if a person is on a healthy weight range.
+                  </p>
+                </div>
+              </div>
+              <div
+                className="card col-md-6 col-sm-12 shadow mt-3"
+                style={{ width: "21rem" }}
+              >
+                <div className="card-body">
+                  <h5 className="card-title">
+                    <img
+                      src="https://www.hdfcergo.com/images/default-source/health-insurance/better-health-with-bmi.svg?sfvrsn=212efb25_2"
+                      alt=""
+                    />
+                    <span className="fs-4 ms-2"> Better Health </span>
+                  </h5>
+                  <p className="card-text">
+                    Suppose a tall and lean person might weigh more than a short
+                    and chubby individual. However, the former may enjoy better
+                    health as long as their weight is suitable for their height.
+                  </p>
+                </div>
+              </div>
+              <div
+                className="card col-md-6 col-sm-12 shadow mt-3"
+                style={{ width: "21rem" }}
+              >
+                <div className="card-body">
+                  <h5 className="card-title">
+                    <img
+                      src="https://www.hdfcergo.com/images/default-source/health-insurance/height-and-weight-correlation.svg"
+                      alt=""
+                    />
+                    <span className="fs-4 ms-2"> H-W Correlation</span>
+                  </h5>
+                  <p className="card-text">
+                    Suppose a tall and lean person might weigh more than a short
+                    and chubby individual. However, the former may enjoy better
+                    health as long as their weight is suitable for their height.
+                  </p>
+                </div>
               </div>
             </div>
-            <div
-              className="card col-md-6 col-sm-12 shadow mt-3"
-              style={{ width: "21rem" }}
-            >
-              <div className="card-body">
-                <h5 className="card-title">
-                  <img
-                    src="https://www.hdfcergo.com/images/default-source/health-insurance/better-health-with-bmi.svg?sfvrsn=212efb25_2"
-                    alt=""
-                  />
-                  <span className="fs-4 ms-2"> Better Health </span>
-                </h5>
-                <p className="card-text">
-                  Suppose a tall and lean person might weigh more than a short
-                  and chubby individual. However, the former may enjoy better
-                  health as long as their weight is suitable for their height.
-                </p>
+          ) : (
+            <div className="row d-flex justify-content-evenly ">
+              <div
+                className="card col-md-6 col-sm-12 shadow mt-3"
+                style={{ width: "21rem" }}
+              >
+                <div className="card-body">
+                  <h5 className="card-title">
+                    <img
+                      src="https://www.hdfcergo.com/images/default-source/health-insurance/easy-calculation.svg"
+                      alt=""
+                    />
+                    <span className="fs-4 ms-2">Easy Calculation</span>
+                  </h5>
+                  <p className="card-text">
+                    BMI calculation is fairly easy. It can be done using a
+                    handheld calculator or with the help of online on websites
+                    and apps with body mass index calculators.
+                  </p>
+                </div>
+              </div>
+              <div
+                className="card col-md-6 col-sm-12 shadow mt-3"
+                style={{ width: "21rem" }}
+              >
+                <div className="card-body">
+                  <h5 className="card-title">
+                    <img
+                      src="https://www.hdfcergo.com/images/default-source/health-insurance/quick-result.svg"
+                      alt=""
+                    />
+                    <span className="fs-4 ms-2"> Quick Result</span>
+                  </h5>
+                  <p className="card-text">
+                    To get the result, simply divide your weight in kilograms by
+                    the square of your height in metres. Or fill your height and
+                    weight in an app or website and the BMI results will flash
+                    on your screen.
+                  </p>
+                </div>
+              </div>
+              <div
+                className="card col-md-6 col-sm-12 shadow mt-3"
+                style={{ width: "21rem" }}
+              >
+                <div className="card-body">
+                  <h5 className="card-title">
+                    <img
+                      src="https://www.hdfcergo.com/images/default-source/health-insurance/calculation-formula.svg"
+                      alt=""
+                    />
+                    <span className="fs-4 ms-2"> Formula</span>
+                  </h5>
+                  <p className="card-text">
+                    BMI can be calculated with the help of two
+                    methods:International System of Units (SI) - BMI = weight
+                    (kg) ÷ (height (m))^2Imperial System - BMI = weight (lb) ÷
+                    (height (inches))^ 2 × 703.
+                  </p>
+                </div>
               </div>
             </div>
-            <div
-              className="card col-md-6 col-sm-12 shadow mt-3"
-              style={{ width: "21rem" }}
-            >
-              <div className="card-body">
-                <h5 className="card-title">
-                  <img
-                    src="https://www.hdfcergo.com/images/default-source/health-insurance/height-and-weight-correlation.svg"
-                    alt=""
-                  />
-                  <span className="fs-4 ms-2"> H-W Correlation</span>
-                </h5>
-                <p className="card-text">
-                  Suppose a tall and lean person might weigh more than a short
-                  and chubby individual. However, the former may enjoy better
-                  health as long as their weight is suitable for their height.
-                </p>
-              </div>
-            </div>
-          </div>
+          )}
         </div>
         <div className="bg-light my-4">
           <div className="py-4" id="WhatIsBMI">
