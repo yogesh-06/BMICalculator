@@ -133,8 +133,8 @@ const calculateBMI = ({
                   <option
                     value="Pounds"
                     data-bs-toggle="tooltip"
-                    title="Option disabled by developer"
-                    disabled
+                    // title="Option disabled by developer"
+                    // disabled
                   >
                     Pounds
                   </option>

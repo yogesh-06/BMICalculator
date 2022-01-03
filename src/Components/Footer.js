@@ -58,28 +58,28 @@ const Footer = () => {
                 </Link>
                 <br />
                 <Link
-                  to="/BMICalculator"
+                  to="/Overweight"
                   className="link-dark text-decoration-none quicklink"
                 >
                   Obesity & Overweight
                 </Link>
                 <br />
                 <Link
-                  to="/BMICalculator"
+                  to="/Underweight"
                   className="link-dark text-decoration-none quicklink"
                 >
                   Malnutritian
                 </Link>
                 <br />
                 <Link
-                  to="/BMICalculator"
+                  to="/Normalweight"
                   className="link-dark text-decoration-none quicklink"
                 >
                   Fit & Healthy
                 </Link>
                 <br />
                 <Link
-                  to="/BMICalculator"
+                  to="/AboutUs"
                   className="link-dark text-decoration-none quicklink"
                 >
                   About Developer

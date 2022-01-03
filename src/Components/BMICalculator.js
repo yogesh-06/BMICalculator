@@ -42,6 +42,15 @@ const BMICalculator = () => {
       setBMI(weight / (height / 100) ** 2);
       data = weight / (height / 100) ** 2;
     }
+
+    if (weightUnit === "Pounds") {
+      data = (weight / (height * height)) * 4.88;
+      setBMI((weight / (height * height)) * 4.88);
+      console.log("pounds");
+    } else {
+      console.log("kilograms");
+    }
+
     if (data < 18) {
       setBMIstatus("Underweight");
       setClassName("bg-primary");
