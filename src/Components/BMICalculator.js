@@ -8,17 +8,17 @@ import Introduction from "./Introduction";
 
 const BMICalculator = () => {
   const [heightUnit, setHeightUnit] = useState("FeetAndInches");
-  const [weightUnit, setWeightUnit] = useState();
+  const [weightUnit, setWeightUnit] = useState("Kilograms");
   const [height, setHeight] = useState("");
   const [weight, setWeight] = useState("");
-  const [BMI, setBMI] = useState();
+  const [BMI, setBMI] = useState(0);
   const [BMIstatus, setBMIstatus] = useState("");
   const [className, setClassName] = useState("");
   const [advice, setAdvice] = useState("");
   const [range, setRange] = useState(18);
   const [button, setButton] = useState("");
   const [cardRow, setCardRow] = useState(true);
-  const calculateBMI = (height, weight) => {
+  const calcBMI = (height, weight) => {
     console.log("---", height, weight, heightUnit, weightUnit);
     setBMI(null);
     let data;
@@ -117,7 +117,7 @@ const BMICalculator = () => {
               }
         }
       >
-        {BMI ? (
+        {BMI && (
           <ResultBMI
             BMI={BMI}
             BMIstatus={BMIstatus}
@@ -126,18 +126,22 @@ const BMICalculator = () => {
             advice={advice}
             button={button}
           />
-        ) : (
-          ""
         )}
 
         <CalculateBMI
-          setHeightUnit={setHeightUnit}
-          setWeightUnit={setWeightUnit}
+          setHeightUnit={(val) => {
+            console.log(val);
+            setHeightUnit(val);
+          }}
+          setWeightUnit={(val) => {
+            console.log(val);
+            setWeightUnit(val);
+          }}
           setHeight={setHeight}
           setWeight={setWeight}
           height={height}
           weight={weight}
-          calculateBMI={calculateBMI}
+          calcBMI={calcBMI}
         />
         <InfoModal />
 
