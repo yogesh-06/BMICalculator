@@ -121,7 +121,7 @@ const Introduction = ({ cardRow, setCardRow }) => {
           {cardRow ? (
             <div className="row d-flex justify-content-evenly ">
               <div
-                className="card col-md-6 col-sm-12 shadow mt-3"
+                className="card col-md-6 col-sm-12 shadow mt-3 overviewCard"
                 style={{ width: "21rem" }}
               >
                 <div className="card-body">
@@ -137,7 +137,7 @@ const Introduction = ({ cardRow, setCardRow }) => {
                 </div>
               </div>
               <div
-                className="card col-md-6 col-sm-12 shadow mt-3"
+                className="card col-md-6 col-sm-12 shadow mt-3 overviewCard"
                 style={{ width: "21rem" }}
               >
                 <div className="card-body">
@@ -153,7 +153,7 @@ const Introduction = ({ cardRow, setCardRow }) => {
                 </div>
               </div>
               <div
-                className="card col-md-6 col-sm-12 shadow mt-3"
+                className="card col-md-6 col-sm-12 shadow mt-3 overviewCard"
                 style={{ width: "21rem" }}
               >
                 <div className="card-body">
@@ -175,7 +175,7 @@ const Introduction = ({ cardRow, setCardRow }) => {
               style={{ animationDelay: "0.6s", animationName: "fadeInUp" }}
             >
               <div
-                className="card col-md-6 col-sm-12 shadow mt-3"
+                className="card col-md-6 col-sm-12 shadow mt-3 overviewCard"
                 style={{ width: "21rem" }}
               >
                 <div className="card-body">
@@ -191,7 +191,7 @@ const Introduction = ({ cardRow, setCardRow }) => {
                 </div>
               </div>
               <div
-                className="card col-md-6 col-sm-12 shadow mt-3"
+                className="card col-md-6 col-sm-12 shadow mt-3 overviewCard"
                 style={{ width: "21rem" }}
               >
                 <div className="card-body">
@@ -208,7 +208,7 @@ const Introduction = ({ cardRow, setCardRow }) => {
                 </div>
               </div>
               <div
-                className="card col-md-6 col-sm-12 shadow mt-3"
+                className="card col-md-6 col-sm-12 shadow mt-3 overviewCard"
                 style={{ width: "21rem" }}
               >
                 <div className="card-body">

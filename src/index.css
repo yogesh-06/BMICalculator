@@ -104,12 +104,18 @@
 }
 /* .skillCard {
   margin-top: 20px;
-}
+}*/
 .skillCard:hover {
-  // transform: translateY(12px); 
-  margin-top: 12px;
-  // transition: 0.3s; 
-} */
+  transform: translateY(-8px);
+  /* margin-top: 12px; */
+  transition: 0.3s;
+}
+.overviewCard:hover {
+  transform: translateY(5px);
+  transition: 0.3s;
+  border-top: red solid 3px;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 768px) {
   .main {

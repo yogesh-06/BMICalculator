@@ -7,8 +7,10 @@ const Footer = ({ activeMenu, setactiveMenu }) => {
   };
   return (
     <>
-      <div style={{ backgroundColor: "#f9fcfd" }} className="mt-5 py-4">
-        <div className="container">
+      <div style={{ backgroundColor: "#f9fcfd" }} className="mt-5 pb-4">
+        <hr />
+
+        <div className="container mt-4">
           <div className="row align-items-start">
             <div className="col-md-3 col-sm-6 my-4">
               <div

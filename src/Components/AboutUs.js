@@ -32,11 +32,11 @@ const AboutUs = () => {
           </span>
         </div>
       </div>
-      <div className="my-5 py-3 ">
+      <div className="my-5 pt-3 ">
         <div className="container">
           <div className="fs-2"> My Skill Sets:</div>
-          <div className="row d-flex justify-content-evenly my-2 mx-1">
-            <div className="card col-md-5 col-sm-12 shadow  mb-4">
+          <div className="row d-flex justify-content-evenly mt-2 mx-1">
+            <div className="card col-md-5 col-sm-12 shadow  mb-4 skillCard">
               <div className="card-body">
                 <h5 className="card-title my-2">
                   <div className="my-2">
@@ -52,7 +52,7 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
-            <div className="card col-md-5 col-sm-12 shadow  mb-4">
+            <div className="card col-md-5 col-sm-12 shadow  mb-4 skillCard">
               <div className="card-body">
                 <h5 className="card-title my-2">
                   <div className="my-2">
@@ -68,7 +68,7 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
-            <div className="card col-md-5 col-sm-12 shadow  mb-4">
+            <div className="card col-md-5 col-sm-12 shadow  mb-4 skillCard">
               <div className="card-body">
                 <h5 className="card-title my-2">
                   <div className="my-2">
@@ -85,7 +85,7 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
-            <div className="card col-md-5 col-sm-12 shadow  mb-4">
+            <div className="card col-md-5 col-sm-12 shadow  mb-4 skillCard">
               <div className="card-body">
                 <h5 className="card-title my-2">
                   <div className="my-2">
@@ -102,7 +102,7 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
-            <div className="card col-md-5 col-sm-12 shadow  mb-4">
+            <div className="card col-md-5 col-sm-12 shadow  mb-4 skillCard">
               <div className="card-body">
                 <h5 className="card-title ">
                   <div className="my-2">
@@ -120,7 +120,7 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
-            <div className="card col-md-5 col-sm-12 shadow  mb-4">
+            <div className="card col-md-5 col-sm-12 shadow  mb-4 skillCard">
               <div className="card-body">
                 <h5 className="card-title">
                   <img
@@ -138,7 +138,6 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div className="fs-2 my-4"> My Work:</div>
         </div>
       </div>
     </>
