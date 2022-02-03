@@ -5,29 +5,7 @@ const AboutUs = () => {
   return (
     <>
       <img src={Contact} className="w-100" alt="" />
-      {/* <div className="container d-flex justify-content-center">
-        <img
-          className="p-0 "
-          style={{
-            borderRadius: "25px",
-          }}
-          src={Developer}
-          alt=""
-        />
-        <div className="ms-3">
-          <h1 className="fs-1 text-danger">
-            Hello World! <span className="fs-4 text-dark">I'm Yogesh</span>
-          </h1>
-          <span style={{ fontFamily: "ubuntu" }}>
-            I am Front-End Web Developer. I’m working as web developer.i have
-            developed many website and also provided my services to college
-            students by getting their projects ready ASAP as a freelancer I have
-            been part of some very good web design projects. <br /> My Skill Set
-            : HTML5, CSS3, JavaScript. I'm also learning Back-End Development
-            and looking forward to be a Full Stack Web Developer.
-          </span>
-        </div>
-      </div> */}
+
       <div
         className="row align-items-center d-flex justify-content-center mx-3 rounded-3 mt-5"
         style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
@@ -51,19 +29,116 @@ const AboutUs = () => {
             been part of some very good web design projects. I'm also learning
             Back-End Development and looking forward to be a Full Stack Web
             Developer. <br />
-            <div className="pt-2">
-              My skill sets :
-              <div className="text-primary d-flex justify-content-evenly">
-                <div className="border-end border-dark pe-2">HTML-5</div>
-                <div className="border-end border-dark pe-2">CSS-3</div>
-                <div className="border-end border-dark pe-2">Bootstrap-5</div>
-                <div className="border-end border-dark pe-2">
-                  JavaScript-Es6
-                </div>
-                <div className="border-end border-dark pe-2">React-js</div>
+          </span>
+        </div>
+      </div>
+      <div className="my-5 py-3 ">
+        <div className="container">
+          <div className="fs-2"> My Skill Sets:</div>
+          <div className="row d-flex justify-content-evenly my-2 mx-1">
+            <div className="card col-md-5 col-sm-12 shadow  mb-4">
+              <div className="card-body">
+                <h5 className="card-title my-2">
+                  <div className="my-2">
+                    <span className="text-danger bg-light rounded-circle p-3 ">
+                      <i class="fab fa-html5"></i>
+                    </span>
+                    <span className="fs-4 ms-2"> HTML-5</span>
+                  </div>
+                </h5>
+                <p className="card-text">
+                  Standard markup language for documents designed to be
+                  displayed in a web browser.
+                </p>
               </div>
             </div>
-          </span>
+            <div className="card col-md-5 col-sm-12 shadow  mb-4">
+              <div className="card-body">
+                <h5 className="card-title my-2">
+                  <div className="my-2">
+                    <span className="text-primary bg-light rounded-circle p-3 ">
+                      <i class="fab fa-css3-alt"></i>
+                    </span>
+                    <span className="fs-4 ms-2"> CSS-3 </span>
+                  </div>
+                </h5>
+                <p className="card-text">
+                  Describing the presentation of a document written in a markup
+                  language such as HTML.
+                </p>
+              </div>
+            </div>
+            <div className="card col-md-5 col-sm-12 shadow  mb-4">
+              <div className="card-body">
+                <h5 className="card-title my-2">
+                  <div className="my-2">
+                    <span className="text-warning bg-light rounded-circle p-3 ">
+                      <i class="fab fa-js-square"></i>
+                    </span>
+
+                    <span className="fs-4 ms-2"> JAVASCRIPT-ES6</span>
+                  </div>
+                </h5>
+                <p className="card-text">
+                  Over 97% of websites use JavaScript on the client side for web
+                  page behavior.
+                </p>
+              </div>
+            </div>
+            <div className="card col-md-5 col-sm-12 shadow  mb-4">
+              <div className="card-body">
+                <h5 className="card-title my-2">
+                  <div className="my-2">
+                    <span className="text-primary bg-light rounded-circle p-3 ">
+                      <i class="fab fa-react"></i>
+                    </span>
+
+                    <span className="fs-4 ms-2"> REACT-JS</span>
+                  </div>
+                </h5>
+                <p className="card-text">
+                  Simplify the development process and foster a comfortable user
+                  experience by using React.js
+                </p>
+              </div>
+            </div>
+            <div className="card col-md-5 col-sm-12 shadow  mb-4">
+              <div className="card-body">
+                <h5 className="card-title ">
+                  <div className="my-2">
+                    <span className="text-info bg-light rounded-circle p-3 ">
+                      <i class="fab fa-bootstrap"></i>{" "}
+                    </span>
+
+                    <span className="fs-4 ms-2"> BOOTSTRAP-5</span>
+                  </div>
+                </h5>
+                <p className="card-text">
+                  Use for responsive, mobile-first front-end web development.
+                  Ready to use typography, forms, buttons, navigation, and other
+                  interface components.
+                </p>
+              </div>
+            </div>
+            <div className="card col-md-5 col-sm-12 shadow  mb-4">
+              <div className="card-body">
+                <h5 className="card-title">
+                  <img
+                    src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                    alt=""
+                    className="bg-light rounded-circle"
+                  />
+
+                  <span className="fs-4 ms-2"> TAILWIND</span>
+                </h5>
+                <p className="card-text">
+                  Set of utility classes which can be used to create you unique
+                  and custom design with ease.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="fs-2 my-4"> My Work:</div>
         </div>
       </div>
     </>

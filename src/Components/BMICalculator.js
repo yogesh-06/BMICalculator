@@ -127,7 +127,17 @@ const BMICalculator = () => {
             button={button}
           />
         ) : (
-          ""
+          <ToastContainer
+            position="top-right"
+            autoClose={1500}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
         )}
 
         <CalculateBMI
@@ -140,18 +150,6 @@ const BMICalculator = () => {
           calculateBMI={calculateBMI}
         />
         <InfoModal />
-
-        <ToastContainer
-          position="top-right"
-          autoClose={1000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-        />
       </div>
 
       <Introduction cardRow={cardRow} setCardRow={setCardRow} />

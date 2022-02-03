@@ -1,15 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useState } from "react/cjs/react.development";
+// import { useState } from "react/cjs/react.development";
 // import Logo from "../Images/Logo.png";
-const Navbar = () => {
-  const [activeMenu, setactiveMenu] = useState("BMICalculator");
+const Navbar = ({ activeMenu, setactiveMenu }) => {
   const handleClick = (e) => {
     setactiveMenu(e);
   };
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light sticky-top bg-light navpad">
+      <nav className="navbar navbar-expand-lg navbar-light sticky-top bg-light navpad sticky-navigation">
         <div className="container-fluid">
           <Link
             to="/BMICalculator"

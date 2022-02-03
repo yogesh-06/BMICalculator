@@ -130,14 +130,7 @@ const calculateBMI = ({
                   }}
                 >
                   <option defaultValue="Kilograms">Kilograms</option>
-                  <option
-                    value="Pounds"
-                    data-bs-toggle="tooltip"
-                    // title="Option disabled by developer"
-                    // disabled
-                  >
-                    Pounds
-                  </option>
+                  <option value="Pounds">Pounds</option>
                 </select>
               </div>
             </div>

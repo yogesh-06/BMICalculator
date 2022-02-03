@@ -2,6 +2,9 @@ import React from "react";
 import Slider1 from "../../Images/FitnessSlider1.jpg";
 import Slider2 from "../../Images/FitnessSlider2.jpg";
 import Slider3 from "../../Images/FitnessSlider3.jpg";
+import Fitness from "./Fitness";
+import IndianFood from "./HealthImages/IndianFood.jpg";
+import HealthyFood from "./HealthyFood";
 const Normalweight = () => {
   return (
     <>
@@ -88,46 +91,79 @@ const Normalweight = () => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-        <div className="container">
+        <div className="container mb-2">
           <div className="fs-3 text-decoration-underline text-danger">
-            About Overweight & Obesity :
+            What is healthy living? :
           </div>
           <span className=" fs-5 small">
-            Obesity is a serious chronic disease, and the prevalence of obesity
-            continues to increase in the
-            <span className="text-danger fw-bold"> India</span>.
+            "Healthy living" to most people means both physical and mental
+            health are in balance or functioning well together in a person. In
+            many instances, physical and mental health are closely linked, so
+            that a change (good or bad) in one directly affects the other.
+            Consequently, some of the tips will include suggestions for
+            emotional and mental "healthy living.
           </span>
         </div>
-        {/* <div className="bg-light">
-        <div className="container">
-          <div className="my-2">
-            <div className="fs-3 text-decoration-underline text-danger">
-              Strategies to Prevent & Manage Obesity :
+        <div className="scroll">
+          <div className="container py-2" id="WhatIsBMI">
+            <div className="px-3 mt-3 fs-3">
+              <span className="fw-bold me-2">
+                Essential Indian Foods In Diet:
+              </span>
             </div>
-            <span className=" fs-5 small">
-              There is no single or simple solution to the obesity epidemic.
-              It’s a complex problem and there has to be a multifaceted
-              approach. Policy makers, state and local organizations, business
-              and community leaders, school, childcare and healthcare
-              professionals, and individuals must work together to create an
-              environment that supports a healthy lifestyle.
-            </span>
+            <div className="row align-items-start my-2">
+              {/* <img
+                className="col-md-4 col-sm-12 intro_img py-1"
+                src={IndianFood}
+                alt=""
+              /> */}
+              <div className="col-md-12 col-sm-12 intro mt-1">
+                It is difficult to design the perfect healthy
+                <span className="text-danger fw-bold"> Indian diet.</span> There
+                is so much variation in climate and availability that no one
+                diet plan can suit everyone. This problem is compounded by the
+                fact that health conditions may mean that you are not able to
+                eat some foods. Furthermore, a lot of options are not available
+                to vegetarians.
+                <br /> In light of these factors, we have prepared a list of 12
+                common Indian foods that must be a part of every diet. Note that
+                if you suffer from any health condition, always ask your doctor
+                about what you can and cannot include from this list Eat three
+                healthy meals a day (breakfast, lunch, and dinner); it is
+                important to remember that dinner does not have to be the
+                largest meal.
+              </div>
+              <HealthyFood />
+            </div>
           </div>
-          <div className="my-2">
-            <div className="fs-3 text-decoration-underline text-danger">
-              Childhood Overweight & Obesity :
+          <div className="container py-2" id="WhatIsBMI">
+            <div className="px-3 mt-3 fs-3">
+              <span className="fw-bold me-2">
+                10 Best Exercies for Everyone:
+              </span>
             </div>
-            <span className=" fs-5 small">
-              Childhood obesity is a serious health problem in the
-              <span className="text-danger fw-bold"> India</span>. 1 in 5
-              children and adolescents in the US have obesity. Some groups of
-              children are more affected than others, but all children are at
-              risk of gaining weight that is higher than what is considered
-              healthy.
-            </span>
+            <div className="row align-items-start my-2">
+              {/* <img
+                className="col-md-4 col-sm-12 intro_img py-1"
+                src={IndianFood}
+                alt=""
+              /> */}
+              <div className="col-md-12 col-sm-12 intro mt-1">
+                We know daily exercise is good for optimizing health. But with
+                so many options and limitless information available, it’s easy
+                to get overwhelmed with what works. But not to worry. We’ve got
+                your back (and body)! <br /> Check out the 10 exercises you can
+                do for ultimate fitness. Combine them into a routine for a
+                workout that’s simple but powerful and sure to keep you in shape
+                for the rest of your life. After 30 days — although you can also
+                do them just twice a week — you should see improvements in your
+                muscular strength, endurance, and balance. <br /> Plus, notice a
+                difference in how your clothes fit — winning!
+              </div>
+              <Fitness />
+            </div>
           </div>
         </div>
-      </div> */}
       </>
     </>
   );

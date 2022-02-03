@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Introduction from "./Components/Introduction";
 import Navbar from "./Components/Navbar";
@@ -9,10 +9,12 @@ import AboutUs from "./Components/AboutUs";
 import Footer from "./Components/Footer";
 import BMICalculator from "./Components/BMICalculator";
 function App() {
+  const [activeMenu, setactiveMenu] = useState("BMICalculator");
+
   return (
     <div>
       <Router>
-        <Navbar />
+        <Navbar activeMenu={activeMenu} setactiveMenu={setactiveMenu} />
         <Switch>
           <Route exact path="/BMICalculator">
             <BMICalculator />
@@ -34,7 +36,7 @@ function App() {
           </Route>
           <Footer />
         </Switch>
-        <Footer />
+        <Footer activeMenu={activeMenu} setactiveMenu={setactiveMenu} />
       </Router>
     </div>
   );

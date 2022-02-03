@@ -2,11 +2,18 @@ import React from "react";
 import Man from "../Images/man.svg";
 import Women from "../Images/women.svg";
 import BMImeasure from "../Images/BMI-measure.png";
+import card1 from "../Images/WhatIsBMI/bmi-definition.svg";
+import card2 from "../Images/WhatIsBMI/better-health.svg";
+import card3 from "../Images/WhatIsBMI/hw-correlation.svg";
+import card4 from "../Images/WhatIsBMI/easy-calculation.svg";
+import card5 from "../Images/WhatIsBMI/quick-result.svg";
+import card6 from "../Images/WhatIsBMI/calculation-formula.svg";
+
 const Introduction = ({ cardRow, setCardRow }) => {
   return (
     <>
       <div className="scroll">
-        <div className="container py-4" id="WhatIsBMI">
+        <div className="container py-4">
           <div className="text-center px-3 fs-3">
             <span className="fw-bold me-2">Online BMI Calculator:</span> A
             Necessary Tool For Health
@@ -119,10 +126,7 @@ const Introduction = ({ cardRow, setCardRow }) => {
               >
                 <div className="card-body">
                   <h5 className="card-title">
-                    <img
-                      src="https://www.hdfcergo.com/images/default-source/health-insurance/bmi-definition.svg?sfvrsn=7f7a28dc_2"
-                      alt=""
-                    />
+                    <img src={card1} alt="" />
                     <span className="fs-4 ms-2"> BMI Definition</span>
                   </h5>
                   <p className="card-text">
@@ -138,10 +142,7 @@ const Introduction = ({ cardRow, setCardRow }) => {
               >
                 <div className="card-body">
                   <h5 className="card-title">
-                    <img
-                      src="https://www.hdfcergo.com/images/default-source/health-insurance/better-health-with-bmi.svg?sfvrsn=212efb25_2"
-                      alt=""
-                    />
+                    <img src={card2} alt="" />
                     <span className="fs-4 ms-2"> Better Health </span>
                   </h5>
                   <p className="card-text">
@@ -157,10 +158,7 @@ const Introduction = ({ cardRow, setCardRow }) => {
               >
                 <div className="card-body">
                   <h5 className="card-title">
-                    <img
-                      src="https://www.hdfcergo.com/images/default-source/health-insurance/height-and-weight-correlation.svg"
-                      alt=""
-                    />
+                    <img src={card3} alt="" />
                     <span className="fs-4 ms-2"> H-W Correlation</span>
                   </h5>
                   <p className="card-text">
@@ -172,17 +170,17 @@ const Introduction = ({ cardRow, setCardRow }) => {
               </div>
             </div>
           ) : (
-            <div className="row d-flex justify-content-evenly ">
+            <div
+              className="row d-flex justify-content-evenly "
+              style={{ animationDelay: "0.6s", animationName: "fadeInUp" }}
+            >
               <div
                 className="card col-md-6 col-sm-12 shadow mt-3"
                 style={{ width: "21rem" }}
               >
                 <div className="card-body">
                   <h5 className="card-title">
-                    <img
-                      src="https://www.hdfcergo.com/images/default-source/health-insurance/easy-calculation.svg"
-                      alt=""
-                    />
+                    <img src={card4} alt="" />
                     <span className="fs-4 ms-2">Easy Calculation</span>
                   </h5>
                   <p className="card-text">
@@ -198,10 +196,7 @@ const Introduction = ({ cardRow, setCardRow }) => {
               >
                 <div className="card-body">
                   <h5 className="card-title">
-                    <img
-                      src="https://www.hdfcergo.com/images/default-source/health-insurance/quick-result.svg"
-                      alt=""
-                    />
+                    <img src={card5} alt="" />
                     <span className="fs-4 ms-2"> Quick Result</span>
                   </h5>
                   <p className="card-text">
@@ -218,10 +213,7 @@ const Introduction = ({ cardRow, setCardRow }) => {
               >
                 <div className="card-body">
                   <h5 className="card-title">
-                    <img
-                      src="https://www.hdfcergo.com/images/default-source/health-insurance/calculation-formula.svg"
-                      alt=""
-                    />
+                    <img src={card6} alt="" />
                     <span className="fs-4 ms-2"> Formula</span>
                   </h5>
                   <p className="card-text">
@@ -241,7 +233,10 @@ const Introduction = ({ cardRow, setCardRow }) => {
               <span className="fw-bold me-2">Health risks:</span> for overweight
               and underweight people
             </div>
-            <div className="row d-flex justify-content-evenly my-4 mx-2">
+            <div
+              className="row d-flex justify-content-evenly my-4 mx-2"
+              style={{ animationDelay: "0.6s", animationName: "fadeInUp" }}
+            >
               <div
                 className="shadow border-bottom border-start border-end col-md-6 col-sm-12 mb-3"
                 style={{ width: "35rem" }}
@@ -324,7 +319,7 @@ const Introduction = ({ cardRow, setCardRow }) => {
               the premium rates. But more importantly it is an indicator for you
               to maintain a healthy lifestyle. The Covid-19 pandemic has made us
               realise how vital it is to be fit and healthy. Hence, knowing your
-              BMI is just a step forward to being aware of your health. <br />{" "}
+              BMI is just a step forward to being aware of your health. <br />
               <br />
               BMI also helps you to take necessary steps to improve your health.
               If you are overweight, you can take measures to reduce your weight

@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({ activeMenu, setactiveMenu }) => {
+  const handleClick = (e) => {
+    setactiveMenu(e);
+  };
   return (
     <>
       <div style={{ backgroundColor: "#f9fcfd" }} className="mt-5 py-4">
@@ -23,16 +26,13 @@ const Footer = () => {
               Join us to stay fit and healthy <br /> with Fit India.
               <h4 className="d-flex my-4" style={{ cursor: "pointer" }}>
                 <a
-                  href="https://www.instagram.com/________.pathfinder/"
+                  href="https://www.linkedin.com/in/yogesh-pawar-1309a021a/"
                   className="text-dark"
                 >
-                  <i className="me-1 fab fa-instagram instaHover"></i>
+                  <i class="fab fa-linkedin-in mx-1 linkedInHover"></i>
                 </a>
-                <a
-                  href="https://ne-np.facebook.com/YogRajputt"
-                  className="text-dark"
-                >
-                  <i className="mx-1 fab fa-facebook fbHover"></i>
+                <a href="https://github.com/yograjput" className="text-dark">
+                  <i class="fab fa-github mx-1 githubHover"></i>
                 </a>
                 <div href="" className="text-dark">
                   <i className="mx-1 fab fa-twitter twitterHover"></i>
@@ -53,6 +53,7 @@ const Footer = () => {
                 <Link
                   to="/BMICalculator"
                   className="link-dark text-decoration-none quicklink"
+                  onClick={() => handleClick("BMICalculator")}
                 >
                   Home
                 </Link>
@@ -60,6 +61,7 @@ const Footer = () => {
                 <Link
                   to="/Overweight"
                   className="link-dark text-decoration-none quicklink"
+                  onClick={() => handleClick("Overweight")}
                 >
                   Obesity & Overweight
                 </Link>
@@ -67,6 +69,7 @@ const Footer = () => {
                 <Link
                   to="/Underweight"
                   className="link-dark text-decoration-none quicklink"
+                  onClick={() => handleClick("Undererweight")}
                 >
                   Malnutritian
                 </Link>
@@ -74,6 +77,7 @@ const Footer = () => {
                 <Link
                   to="/Normalweight"
                   className="link-dark text-decoration-none quicklink"
+                  onClick={() => handleClick("Normalweight")}
                 >
                   Fit & Healthy
                 </Link>
@@ -81,6 +85,7 @@ const Footer = () => {
                 <Link
                   to="/AboutUs"
                   className="link-dark text-decoration-none quicklink"
+                  onClick={() => handleClick("AboutUs")}
                 >
                   About Developer
                 </Link>
@@ -91,15 +96,14 @@ const Footer = () => {
             <div className="col-md-3 col-sm-6">
               <div className="fs-4 text-danger">Contact Us</div>
               <hr style={{ width: "220px" }} className="my-1" />
-              Weoto Technologies Pvt. Ltd, <br /> 2nd Floor, Chandwadkar Park,
-              <br />
-              Infront of Nandan Sweets,
-              <br /> College Road, Nashik-422005
+
               <div className="mt-2">
                 Phone : <span className="quicklink">+91-9765618373</span>
                 <br />
                 Email :
-                <span className="quicklink">contact.dev@rediffmail.com</span>
+                <span className="quicklink">
+                  mailme_pawaryogesh@rediffmail.com
+                </span>
               </div>
             </div>
 
