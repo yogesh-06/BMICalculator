@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 const ResultBMI = ({ BMI, BMIstatus, className, range, advice, button }) => {
   return (
     <>
       <div
-        className="offcanvas offcanvas-bottom"
+        className={`offcanvas offcanvas-bottom ${BMI ? "show" : ""}`}
         tabIndex="-1"
         id="offcanvasBottom"
         aria-labelledby="offcanvasBottomLabel"
@@ -12,6 +13,7 @@ const ResultBMI = ({ BMI, BMIstatus, className, range, advice, button }) => {
           borderTopLeftRadius: "10px",
           borderTopRightRadius: "10px",
           // height: "260px",
+          visibility: BMI ? "visible" : "",
         }}
       >
         <div className="offcanvas-header py-1 d-flex justify-content-between">

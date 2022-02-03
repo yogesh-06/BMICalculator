@@ -10,7 +10,7 @@ const calculateBMI = ({
   setWeight,
   height,
   weight,
-  calculateBMI,
+  calcBMI,
 }) => {
   const schema = Yup.object({
     height: Yup.number().required(),
@@ -22,7 +22,7 @@ const calculateBMI = ({
         initialValues={{ height: "", weight: "" }}
         onSubmit={(values) => {
           console.log(values);
-          calculateBMI(values.height, values.weight);
+          calcBMI(values.height, values.weight);
         }}
         validationSchema={schema}
       >
@@ -138,7 +138,7 @@ const calculateBMI = ({
             <button
               type="button"
               className="btn btn-sm btn-light mt-2 px-3 py-2 calculate"
-              onClick={() => calculateBMI(height, weight)}
+              onClick={() => calcBMI(height, weight)}
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasBottom"
               style={{ borderRadius: "6px" }}
